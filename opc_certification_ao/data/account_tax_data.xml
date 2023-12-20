@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- COLOCAR GRUPO 'Imposto' NOS IMPOSTOS DE VENDA E DE COMPRA
+             CRIADOS PELO MÓDULO l10n_pt -->
+
+
+
+        <!-- GRUPOS DE IMPOSTOS -->
+        <record id="tax_group_imposto" model="account.tax.group">
+            <field name="name">Imposto</field>
+        </record>
+        <record id="tax_group_retencao" model="account.tax.group">
+            <field name="name">Retenção</field>
+        </record>
+
+<!--        <record id="l10n_pt.1_iva22" model="account.tax">-->
+<!--            <field name="active">False</field>-->
+<!--        </record>-->
+
+<!--        <record id="l10n_pt.1_iva16" model="account.tax">-->
+<!--            <field name="active">False</field>-->
+<!--        </record>-->
+
+<!--        <record id="l10n_pt.1_iva12" model="account.tax">-->
+<!--            <field name="active">False</field>-->
+<!--        </record>-->
+
+<!--        <record id="l10n_pt.1_iva9" model="account.tax">-->
+<!--            <field name="active">False</field>-->
+<!--        </record>-->
+
+<!--        <record id="l10n_pt.1_iva5" model="account.tax">-->
+<!--            <field name="active">False</field>-->
+<!--        </record>-->
+
+<!--        <record id="l10n_pt.1_iva4" model="account.tax">-->
+<!--            <field name="active">False</field>-->
+<!--        </record>-->
+
+
+        <record id="l10n_pt.1_iva23" model="account.tax">
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_23"/>
+            <field name="saft_tax_code">NOR</field>
+            <field name="name">14</field>
+            <field name="amount">14</field>
+            <field name="description">IVA14</field>
+        </record>
+
+        <record id="tax_group_iva_2" model="account.tax.group">
+            <field name="name">IVA 2</field>
+        </record>
+
+        <record id="1_iva2" model="account.tax">
+            <field name="saft_tax_code">RED</field>
+            <field name="tax_group_id" ref="opc_certification_ao.tax_group_iva_2"/>
+            <field name="name">2</field>
+            <field name="amount">2</field>
+            <field name="description">IVA2</field>
+        </record>
+
+        <record id="l10n_pt.tax_group_iva_23" model="account.tax.group">
+            <field name="name">IVA 14</field>
+        </record>
+
+        <!-- IVA13 -->
+        <record id="l10n_pt.1_iva13" model="account.tax">
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_13"/>
+            <field name="saft_tax_code">RED</field>
+            <field name="name">7</field>
+            <field name="amount">7</field>
+            <field name="description">IVA7</field>
+        </record>
+
+        <record id="l10n_pt.tax_group_iva_13" model="account.tax.group">
+            <field name="name">IVA 7</field>
+        </record>
+
+        <!-- IVA6 -->
+        <record id="l10n_pt.1_iva6" model="account.tax">
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_6"/>
+            <field name="saft_tax_code">RED</field>
+            <field name="name">5</field>
+            <field name="amount">5</field>
+            <field name="description">IVA5</field>
+        </record>
+
+        <record id="l10n_pt.tax_group_iva_6" model="account.tax.group">
+            <field name="name">IVA 5</field>
+        </record>
+
+        <!-- IVA0 -->
+        <record id="l10n_pt.1_iva0" model="account.tax">
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+        <!-- IVA23 COMPRA -->
+        <record id="l10n_pt.1_compiva23" model="account.tax">
+            <field name="tax_group_id" ref="tax_group_imposto"/>
+        </record>
+
+        <!-- IVA13 COMPRA -->
+        <record id="l10n_pt.1_compiva13" model="account.tax">
+            <field name="tax_group_id" ref="tax_group_imposto"/>
+        </record>
+
+        <!-- IVA6 COMPRA -->
+        <record id="l10n_pt.1_compiva6" model="account.tax">
+            <field name="tax_group_id" ref="tax_group_imposto"/>
+        </record>
+
+        <!-- IVA0 COMPRA -->
+        <record id="l10n_pt.1_compiva0" model="account.tax">
+            <field name="tax_group_id" ref="tax_group_imposto"/>
+        </record>
+
+        <!-- IMPOSTOS ISENTOS -->
+
+        <record id="l10n_pt.1_iva0" model="account.tax">
+            <field name="name">0 M00</field>
+            <field name="description">M00: Regime Simplificado</field>
+            <field name="exemption_reason">Regime Simplificado</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+         </record>
+
+        <record id="ivam02" model="account.tax">
+            <field name="name">0 M02</field>
+            <field name="description">M02: Transmissão de bens e serviço não sujeita</field>
+            <field name="exemption_reason">Transmissão de bens e serviço não sujeita</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+         </record>
+
+        <record id="ivam03" model="account.tax">
+            <field name="name">0 M11</field>
+            <field name="description">M11: Isento nos termos da alínea b) do nº1 do artigo 12.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea b) do nº1 do artigo 12.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+        <record id="ivam04" model="account.tax">
+            <field name="name">0 M12</field>
+            <field name="description">M12: Isento nos termos da alínea c) do nº1 do artigo 12.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea c) do nº1 do artigo 12.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+        <record id="ivam05" model="account.tax">
+            <field name="name">0 M13</field>
+            <field name="description">M13 Isento nos termos da alínea d) do nº1 do artigo 12.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea d) do nº1 do artigo 12.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+        <record id="ivam06" model="account.tax">
+            <field name="name">0 M14</field>
+            <field name="description">M14 Isento nos termos da alínea d) do nº1 do artigo 12.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea d) do nº1 do artigo 12.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+        <record id="ivam07" model="account.tax">
+            <field name="name">0 M15</field>
+            <field name="description">M15 Isento nos termos da alínea f) do nº1 do artigo 12.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea f) do nº1 do artigo 12.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+        <record id="ivam08" model="account.tax">
+            <field name="name">0 M16</field>
+            <field name="description">M16 Isento nos termos da alínea g) do nº1 do artigo 12.º do CIVA </field>
+            <field name="exemption_reason">Isento nos termos da alínea g) do nº1 do artigo 12.º do CIVA </field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+        <record id="ivam09" model="account.tax">
+            <field name="name">0 M17</field>
+            <field name="description">M17 Isento nos termos da alínea h) do nº1 do artigo 12.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea h) do nº1 do artigo 12.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+        <record id="ivam10" model="account.tax">
+            <field name="name">0 M18</field>
+            <field name="description">M18 Isento nos termos da alínea i) do nº1 artigo 12.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea i) do nº1 artigo 12.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+        <record id="ivam11" model="account.tax">
+            <field name="name">0 M19</field>
+            <field name="description">M19 Isento nos termos da alínea j) do nº1 do artigo 12.º do CIVA </field>
+            <field name="exemption_reason">Isento nos termos da alínea j) do nº1 do artigo 12.º do CIVA </field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+        <record id="ivam12" model="account.tax">
+            <field name="name">0 M20</field>
+            <field name="description">M20 Isento nos termos da alínea k) do nº1 do artigo 12.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea k) do nº1 do artigo 12.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+        <record id="ivam14" model="account.tax">
+            <field name="name">0 M21</field>
+            <field name="description">M21 Isento nos termos da alínea l) do nº1 do artigo 12.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea l) do nº1 do artigo 12.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+        <record id="ivam15" model="account.tax">
+            <field name="name">0 M22</field>
+            <field name="description">M22 Isento nos termos da alínea m) do artigo 12.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea m) do artigo 12.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+        <record id="ivam16" model="account.tax">
+            <field name="name">0 M23</field>
+            <field name="description">M23 Isento nos termos da alínea n) do artigo 12.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea n) do artigo 12.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+        <record id="ivam99" model="account.tax">
+            <field name="name">0 M24</field>
+            <field name="description">M24 Isento nos termos da alínea 0) do artigo 12.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea 0) do artigo 12.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="l10n_pt.tax_group_iva_0"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+        <record id="retencaovar" model="account.tax">
+            <field name="name">0 M80</field>
+            <field name="description">M80 Isento nos termos da alinea a) do nº1 do artigo 14.º</field>
+            <field name="exemption_reason">Isento nos termos da alinea a) do nº1 do artigo 14.º</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m81" model="account.tax">
+            <field name="name">0 M81</field>
+            <field name="description">M81 Isento nos termos da alinea b) do nº1 do artigo 14.º</field>
+            <field name="exemption_reason">Isento nos termos da alinea b) do nº1 do artigo 14.º</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m82" model="account.tax">
+            <field name="name">0 M82</field>
+            <field name="description">M82 Isento nos termos da alinea c) do nº1 do artigo 14.º</field>
+            <field name="exemption_reason">Isento nos termos da alinea c) do nº1 do artigo 14.º</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m83" model="account.tax">
+            <field name="name">0 M83</field>
+            <field name="description">M83 Isento nos termos da alinea d) do nº1 do artigo 14.º</field>
+            <field name="exemption_reason">Isento nos termos da alinea d) do nº1 do artigo 14.º</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m84" model="account.tax">
+            <field name="name">0 M84</field>
+            <field name="description">M84 Isento nos termos da alínea e) do nº1 do artigo 14.º</field>
+            <field name="exemption_reason">Isento nos termos da alínea e) do nº1 do artigo 14.º</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m85" model="account.tax">
+            <field name="name">0 M85</field>
+            <field name="description">M85 Isento nos termos da alinea a) do nº2 do artigo 14.º</field>
+            <field name="exemption_reason">Isento nos termos da alinea a) do nº2 do artigo 14.º</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m86" model="account.tax">
+            <field name="name">0 M86</field>
+            <field name="description">M86 Isento nos termos da alinea b) do nº2 do artigo 14.º</field>
+            <field name="exemption_reason">Isento nos termos da alinea b) do nº2 do artigo 14.º</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m30" model="account.tax">
+            <field name="name">0 M30</field>
+            <field name="description">M30 Isento nos termos da alínea a) do artigo 15.º do CIVA </field>
+            <field name="exemption_reason">Isento nos termos da alínea a) do artigo 15.º do CIVA </field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m31" model="account.tax">
+            <field name="name">0 M31</field>
+            <field name="description">M31 Isento nos termos da alínea b) do artigo 15.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea b) do artigo 15.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m32" model="account.tax">
+            <field name="name">0 M32</field>
+            <field name="description">M32 Isento nos termos da alínea c) do artigo 15.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea c) do artigo 15.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m33" model="account.tax">
+            <field name="name">0 M33</field>
+            <field name="description">M33 Isento nos termos da alínea d) do artigo 15.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea d) do artigo 15.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m34" model="account.tax">
+            <field name="name">0 M34</field>
+            <field name="description">M43 Isento nos termos da alínea e) do artigo 15.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea e) do artigo 15.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m35" model="account.tax">
+            <field name="name">0 M35</field>
+            <field name="description">M35 Isento nos termos da alínea f) do artigo 15.º do CIVA </field>
+            <field name="exemption_reason">Isento nos termos da alínea f) do artigo 15.º do CIVA </field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m36" model="account.tax">
+            <field name="name">0 M36</field>
+            <field name="description">M36 Isento nos termos da alínea g) do artigo 15.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea g) do artigo 15.º do CIVA </field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m37" model="account.tax">
+            <field name="name">0 M37</field>
+            <field name="description">M37 Isento nos termos da alínea h) do artigo 15.º do CIVA </field>
+            <field name="exemption_reason">Isento nos termos da alínea h) do artigo 15.º do CIVA º</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m38" model="account.tax">
+            <field name="name">0 M38</field>
+            <field name="description">M38 Isento nos termos da alínea i) do artigo 15.º do CIVA</field>
+            <field name="exemption_reason">Isento nos termos da alínea i) do artigo 15.º do CIVA</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m90" model="account.tax">
+            <field name="name">0 M90</field>
+            <field name="description">M90 Isento nos termos da alinea a) do nº1 do artigo 16.º</field>
+            <field name="exemption_reason">Isento nos termos da alinea a) do nº1 do artigo 16.º</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m91" model="account.tax">
+            <field name="name">0 M91</field>
+            <field name="description">M91 Isento nos termos da alinea b) do nº1 do artigo 16.º</field>
+            <field name="exemption_reason">Isento nos termos da alinea b) do nº1 do artigo 16.º</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m92" model="account.tax">
+            <field name="name">0 M92</field>
+            <field name="description">M92 Isento nos termos da alinea c) do nº1 do artigo 16.º</field>
+            <field name="exemption_reason">Isento nos termos da alinea c) do nº1 do artigo 16.º</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m93" model="account.tax">
+            <field name="name">0 M93</field>
+            <field name="description">M93 Isento nos termos da alinea d) do nº1 do artigo 16.º</field>
+            <field name="exemption_reason">Isento nos termos da alinea d) do nº1 do artigo 16.º</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+
+
+
+        <record id="zero_m94" model="account.tax">
+            <field name="name">0 M94</field>
+            <field name="description">M94 Isento nos termos da alinea e) do nº1 do artigo 16.º</field>
+            <field name="exemption_reason">Isento nos termos da alinea e) do nº1 do artigo 16.º</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="tax_group_id" ref="tax_group_retencao"/>
+            <field name="saft_tax_code">ISE</field>
+        </record>
+    </data>
+</odoo>

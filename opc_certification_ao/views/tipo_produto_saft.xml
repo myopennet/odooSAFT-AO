@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<odoo>
+	<data>
+
+        <record id="tipo_produto_saft_form_view" model="ir.ui.view">
+            <field name="name">tipo_produto_saft_form</field>
+            <field name="model">tipo.produto.saft</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+			    <form string="Tipo Produto Saft">
+			        <sheet>
+				        <label for="code"/>
+				        <h1>
+					        <field name="code"/>
+				        </h1>
+				        <group>
+                            <field name="name"/>
+				        </group>
+                    </sheet>
+                </form>
+		    </field>
+		</record>
+
+	    <record id="tipo_produto_saft_tree_view" model="ir.ui.view">
+		    <field name="name">tipo_produto_saft_tree</field>
+            <field name="model">tipo.produto.saft</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Tipo Produto Saft">
+                    <field name="code" />
+                    <field name="name" />
+                </tree>
+		    </field>
+	    </record>
+
+	    <record id="action_tipo_produto_saft" model="ir.actions.act_window">
+            <field name="name">Tipo Produto Saft</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">tipo.produto.saft</field>
+            <field name="view_mode">tree,form</field>
+	    </record>
+
+	    <menuitem action="action_tipo_produto_saft" id="menu_action_tipo_produto_saft"
+				  parent="account.menu_finance_configuration" groups="account.group_account_manager" sequence="19"/>
+
+	</data>
+</odoo>

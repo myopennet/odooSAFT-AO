@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_account_move_reversal_cert" model="ir.ui.view">
+            <field name="name">account.move.reversal.form.cert</field>
+            <field name="model">account.move.reversal</field>
+            <field name="inherit_id" ref="account.view_account_move_reversal"/>
+            <field name="arch" type="xml">
+                <field name="journal_id" position="attributes">
+                    <attribute name="domain">[('type', '!=', 'sale')]</attribute>
+               </field>
+            </field>
+        </record>
+
+        <record id="account_tax_saft_inherit" model="ir.ui.view">
+            <field name="name">account_tax_saft_inherit</field>
+            <field name="model">account.tax</field>
+            <field name="priority">20</field>
+            <field name="inherit_id" ref="account.view_tax_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//notebook/page[2]" position="after">
+                        <page string="Dados SAFT">
+                            <group string="Dados Saft">
+                                <field name="country_region"/>
+                                <field name="saft_tax_type"/>
+                                <field name="saft_tax_code"/>
+                                <field name="expiration_date"/>
+                                <field name="exemption_reason"/>
+                                <field name="autoliquidacao"/>
+                            </group>
+                        </page>
+                    </xpath>
+                    <field name="include_base_amount" position="attributes">
+                        <attribute name="invisible">1</attribute>
+                    </field>
+                </data>
+            </field>
+        </record>
+
+        <!-- account_account -->
+        <record model="ir.ui.view" id="account_account_form_inherits">
+            <field name="name">account_account_form_inherits</field>
+            <field name="model">account.account</field>
+            <field name="inherit_id" ref="account.view_account_form"/>
+            <field name="arch" type="xml">
+                <field name="code" position="after">
+                    <field name="tipo_conta"/>
+                    <field name="parent_id"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_account_account_tree_hierarchy" model="ir.ui.view">
+            <field name="name">account.account.hierarchy</field>
+            <field name="model">account.account</field>
+            <field name="field_parent">children_ids</field>
+            <field name="arch" type="xml">
+                <tree string="Plano de Contas">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="user_type_id"/>
+                    <field name="currency_id" options="{'no_create': True}" groups="base.group_multi_currency"/>
+                    <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="account_journal_saft_inheritss">
+            <field name="name">account_journal_saft_inheritss</field>
+            <field name="model">account.journal</field>
+            <field name="inherit_id" ref="account.view_account_journal_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook/page[@name='advanced_settings']" position="after">
+                    <page string="Parâmetros SAFT">
+                        <group>
+                            <field name="saft_inv_type"/>
+                            <field name="active"/>
+                            <field name="allow_date"/>
+                            <field name="manual"/>
+                            <field name="integrado"/>
+                            <field name="paga_me"/>
+                            <field name="por_defeito"/>
+                            <field name="self_billing"/>
+                            <field name="transaction_type"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Account Invoice -->
+        <record model="ir.ui.view" id="invoice_form_inherit_certs">
+            <field name="name">invoice_form_inherit_certs</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <div name="journal_div" position="after">
+                    <field name="moeda_show" invisible="1"/>
+                    <label for="currency_tax_info"
+                           groups="account.group_account_readonly"
+                           invisible="context.get('default_journal_id') and context.get('move_type', 'entry') != 'entry'"
+                            attrs="{'invisible': [('moeda_show','=',False)]}"/>
+                    <div name="journal_div_currency" class="d-flex" invisible="context.get('default_journal_id') and context.get('move_type', 'entry') != 'entry'">
+                        <field name="currency_tax_info" nolabel="1"/>
+                    </div>
+                </div>
+                <field name="invoice_origin" position="replace">
+                    <field name="invoice_origin" attrs="{'readonly': [('state','in',['posted','cancel'])]}"/>
+                    <field name="ref_pagamento" invisible="1"/>
+					<field name="ref_saft_inv_type" invisible="1"/>
+                    <field name="reason_cancel"
+                           attrs="{'invisible': [('move_type','in',['in_invoice','out_invoice']),
+                           ('reason_cancel','=',False)]}"/>
+                    <field name="modo_pagar_vd" domain="[('type','in', ('bank','cash'))]" widget="selection"
+                           attrs="{'invisible': [('ref_saft_inv_type', 'not in', ['VD', 'FS', 'FR'])]}"/>
+                </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="invoice_tree_inherit">
+            <field name="name">account.move.tree</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_invoice_tree"/>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <field name="name" position="replace">
+                    <field name="name" invisible="1"/>
+                    <field name="internal_number" decoration-bf="1" string="Number"/>
+                </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="invoice_tree_inherit_search">
+            <field name="name">invoice_tree_inherit_search</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="internal_number" string="Number"/>
+                    <field name="product_id"/>
+                </field>
+            </field>
+        </record>
+		
+    </data>
+</odoo>

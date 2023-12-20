@@ -1,0 +1,8 @@
+1 - Associar contas filhas nos impostos
+2 - Editar as sequencias de faturação
+3 - Conferir nome da empresa e dados do partner associado
+4 - Mudar conta 0 do plano para nome da empresa
+5 - Adicionar imposto por defeito nas configs da contabilidade para vendas e compras
+6 - Adicionar conta por defeito de receita e despesa nas categorias dos produtos.
+7 - na administracao - parametros de conf. - pode-se definir conta por defeito em receitas e despesas nos parceiros. 
+8 - Ver campo saft_inv_type e type nos diarios

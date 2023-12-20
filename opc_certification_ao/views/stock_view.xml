@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_picking_type_form_in" model="ir.ui.view">
+            <field name="name">stock.picking.type.form</field>
+            <field name="model">stock.picking.type</field>
+            <field name="inherit_id" ref="stock.view_picking_type_form"/>
+            <field name="arch" type="xml">
+                <field name="sequence_id" position="after">
+                    <field name="sequence_id_validate"/>
+                    <field name="sequence_id_gd_validate"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="action_at_code_manual" model="ir.actions.act_window">
+            <field name="name">Inserir manualmente</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">wizard.manual.code</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <record id="action_wizard_alterar_guia" model="ir.actions.act_window">
+            <field name="name">Alterar</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">wizard.alterar.guia</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <record model="ir.ui.view" id="view_picking_form_at_fields">
+            <field name="name">view_picking_form_at_fields</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <field name="picking_type_id" position="after">
+                    <field name="manual" attrs="{'readonly':[('state','in',('done'))]}"/>
+                    <field name="is_gd" attrs="{'readonly':[('state','in',('done'))]}"/>
+                    <field name="is_gc" attrs="{'readonly':[('state','in',('done'))]}"/>
+                </field>
+                <xpath expr="//page[@name='extra']" position="after">
+                    <page string="Dados de Transporte">
+                        <group>
+                            <group string="Carga">
+                                <field name="usar_dados_empresa"/>
+                                <label for="carga_rua" string="Dados de Carga"
+                                       attrs="{'invisible': [('usar_dados_empresa', '==', False)]}"/>
+                                <div attrs="{'invisible': [('usar_dados_empresa', '==', False)]}">
+                                    Morada da Empresa
+                                </div>
+                                <field name="carga_rua"
+                                       attrs="{'invisible': [('usar_dados_empresa', '==', True)], 'required': [('usar_dados_empresa', '==', False)]}"/>
+                                <field name="carga_cidade"
+                                       attrs="{'invisible': [('usar_dados_empresa', '==', True)], 'required': [('usar_dados_empresa', '==', False)]}"/>
+                                <field name="carga_cp"
+                                       attrs="{'invisible': [('usar_dados_empresa', '==', True)], 'required': [('usar_dados_empresa', '==', False)]}"/>
+                                <field name="carga_pais"
+                                       attrs="{'invisible': [('usar_dados_empresa', '==', True)], 'required': [('usar_dados_empresa', '==', False)]}"/>
+
+                                <field name="data_carga"/>
+                                <field name="veiculo"/>
+                            </group>
+                            <group string="Descarga">
+                                <field name="usar_dados_client"/>
+                                <label for="descarga_rua" string="Dados de Descarga"
+                                       attrs="{'invisible': [('usar_dados_client', '==', False)]}"/>
+                                <div attrs="{'invisible': [('usar_dados_client', '==', False)]}">
+                                    Morada do Cliente
+                                </div>
+                                <field name="descarga_rua"
+                                       attrs="{'invisible': [('usar_dados_client', '==', True)], 'required': [('usar_dados_client', '==', False)]}"/>
+                                <field name="descarga_cidade"
+                                       attrs="{'invisible': [('usar_dados_client', '==', True)], 'required': [('usar_dados_client', '==', False)]}"/>
+                                <field name="descarga_cp"
+                                       attrs="{'invisible': [('usar_dados_client', '==', True)], 'required': [('usar_dados_client', '==', False)]}"/>
+                                <field name="descarga_pais"
+                                       attrs="{'invisible': [('usar_dados_client', '==', True)], 'required': [('usar_dados_client', '==', False)]}"/>
+                                <field name="data_descarga" attrs="{'required': [('usar_dados_client', '==', False)]}"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- GUIAS DE DEVOLUCAO-->
+
+        <record id="act_res_partner_2_stock_picking1" model="ir.actions.act_window">
+            <field name="name">Guias de Devolução</field>
+            <field name="res_model">stock.picking</field>
+            <field name="context">{}</field>
+            <field name="view_id" ref="stock.vpicktree"/>
+        </record>
+
+    </data>
+</odoo>

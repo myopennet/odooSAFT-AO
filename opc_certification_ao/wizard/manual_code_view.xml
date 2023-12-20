@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- INSERIR CODIGO AT MANUALMENTE -->
+        <record id="form_at_code_manual" model="ir.ui.view">
+            <field name="name">AT CODE Manual</field>
+            <field name="model">wizard.manual.code</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form col="3" string="Manul AT-CODE">
+                    <notebook>
+                        <page string="Inserir">
+                            <group col="4" colspan="4">
+                                <field name="name" colspan="2"/>
+                            </group>
+                        </page>
+                        <page string="Ajuda">
+                            <p>
+                                Pode obter o código no Portal das Finanças ou por telefone e adicioná-lo manualmente.
+                            </p>
+                        </page>
+                    </notebook>
+                    <footer>
+                        <button icon="gtk-ok" colspan="1" name="act_getfile" string="Submeter" type="object"/>
+                        <button icon="gtk-cancel" colspan="1" name="act_cancel" special="cancel" string="Cancelar"
+                                type="object"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

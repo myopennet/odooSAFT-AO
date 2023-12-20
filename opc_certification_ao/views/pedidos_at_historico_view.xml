@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Pedidos Finanças -->
+        <record model="ir.ui.view" id="pedidos_financas_form">
+            <field name="name">Pedido Finanças</field>
+            <field name="model">pedidos.at.historico</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="name"/>
+                <field name="at_code"/>
+                <field name="codigo_erro"/>
+                <field name="msg_erro"/>
+                <field name="doc_state"/>
+                <field name="user_id"/>
+                <field name="pedido"/>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="pedidos_financas_tree">
+            <field name="name">Pedidos Finanças</field>
+            <field name="model">pedidos.at.historico</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <field name="name"/>
+                <field name="at_code"/>
+                <field name="codigo_erro"/>
+                <field name="msg_erro"/>
+                <field name="doc_state"/>
+                <field name="user_id"/>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="pedidos_financas_action">
+            <field name="name">Pedidos Finanças</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">pedidos.at.historico</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="pedidos_financas_tree"/>
+        </record>
+
+    </data>
+</odoo>

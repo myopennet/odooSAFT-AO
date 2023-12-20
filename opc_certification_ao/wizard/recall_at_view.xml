@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- REENVIAR PEDIDOS EM MASSA -->
+        <record id="form_wizard_recall_at" model="ir.ui.view">
+            <field name="name">wizard.recall.at</field>
+            <field name="model">wizard.recall.at</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Reenviar">
+                    <button icon="gtk-ok" colspan="1" name="act_recall" string="Reenviar pedidos" type="object"/>
+                    <button icon="gtk-cancel" colspan="1" name="act_cancel" special="cancel" string="Cancelar"
+                            type="object"/>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="form_wizard_alert_atcud" model="ir.ui.view">
+            <field name="name">form_wizard_alert_atcud</field>
+            <field name="model">alert.atcud</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group attrs="{'invisible':[('show_error', '!=', True)]}">
+                        <field name="error_message" nolabel="1"/>
+                    </group>
+                    <group attrs="{'invisible':['|', ('hide', '!=', '0'),('show_error', '=', True)]}">
+                        <p style="font-size: 15px;">
+                            O número da série do documento que está a tentar validar não tem o Código de Validação fornecido pela AT preenchido.<br/>
+                           Deverá utilizar os seguintes dados para pedir o código AT para esta série:
+                        </p>
+                    </group>
+                    <group attrs="{'invisible':['|', ('hide', '!=', '1'), ('show_error', '=', True)]}">
+                        <p style="font-size: 15px;">
+                           Deverá utilizar os seguintes dados para pedir o código AT para esta série:
+                        </p>
+                    </group>
+                    <group attrs="{'invisible':['|', ('hide', '!=', '2'), ('show_error', '=', True)]}">
+                        <p style="font-size: 15px;">
+                           Clique em "Ver todas as séries ATCUD" para configurar as séries em falta.
+                        </p>
+                    </group>
+                    <group string="Dados a Enviar à AT" attrs="{'invisible':['|', ('hide', '=', '2'), ('show_error', '=', True)]}">
+                        <field name="identificador_serie" />
+                        <field name="tipo_documento"/>
+                        <field name="hide" invisible="1"/>
+                        <field name="show_error" invisible="1"/>
+                        <field name="inicio_numeracao" attrs="{'invisible':[('inicio_numeracao_boolean','=',True)]}"/>
+                        <field name="inicio_numeracao_new" attrs="{'invisible':[('inicio_numeracao_boolean','=',False)]}"/>
+                        <field name="inicio_numeracao_boolean" invisible="1"/>
+                        <field name="data_prevista_inicio" />
+                        <field name="data_prevista_fim" attrs="{'required': [('data_prevista_inicio', '!=', False)]}"/>
+                    </group>
+                    <group string="Código de Validação da Série fornecido pela AT" attrs="{'invisible':['|', ('hide', '=', '2'), ('show_error', '=', True)]}">
+                        <field name="codigo_validacao_serie"/>
+                    </group>
+                    <group string="Outros Dados" attrs="{'invisible':['|', ('hide', '=', '2'), ('show_error', '=', True)]}">
+                        <field name="sequence_id" options="{'no_open': True}"/>
+                    </group>
+                      <footer>
+                          <button name="add_new_code" string="Adicionar novo Código" type="object" class="oe_highlight"
+                          attrs="{'invisible':['|', ('hide', '=', '2'),('show_error', '=', True)]}"/>
+                          <button name="open_sequences" string="Ver todas as séries ATCUD" type="object" class="btn-secondary"
+                          attrs="{'invisible':[('hide', '=', '1')]}"/>
+                          <button name="change_prefix_year" string="Alterar Prefixo" type="object" class="btn-secondary"
+                          attrs="{'invisible':[('show_error', '!=', True)]}"/>
+                          <button string="Cancelar" class="oe_link" special="cancel" />
+                      </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_wizard_alert_atcud" model="ir.actions.act_window">
+            <field name="name">ATCUD em falta</field>
+            <field name="res_model">alert.atcud</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="form_wizard_alert_atcud"/>
+            <field name="target">new</field>
+        </record>
+
+        <record id="action_wizard_alert_atcud_menu" model="ir.actions.act_window">
+            <field name="name">Configurar ATCUD</field>
+            <field name="res_model">alert.atcud</field>
+            <field name="view_mode">form</field>
+            <field name="context">{'default_hide': '2'}</field>
+            <field name="view_id" ref="form_wizard_alert_atcud"/>
+            <field name="target">new</field>
+        </record>
+
+
+         <menuitem action="action_wizard_alert_atcud_menu" id="menu_list_seqs_atcud"
+                  parent="account.account_account_menu" sequence="20"/>
+
+
+    </data>
+</odoo>

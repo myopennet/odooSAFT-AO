@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- ALTERAR GUIA -->
+        <record id="form_wizard_alterar_guia" model="ir.ui.view">
+            <field name="name">Alterar guia cancelada</field>
+            <field name="model">wizard.alterar.guia</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Alterar guia cancelada">
+                    <notebook>
+                        <page string="Alterar">
+                            <group col="4" colspan="4">
+                                <field name="name" colspan="2"/>
+                                <field name="data_carga" colspan="2"/>
+                                <field name="data_descarga" colspan="2"/>
+                            </group>
+                        </page>
+                        <page string="Ajuda">
+                            <p>
+                               Este wizard permite criar um duplicado da guia com o estado AT em rascunho
+                               e com a Data de Carga, Data de Descarga e Veículo alterados.
+                               Para alterar qualquer um dos campos assinalados basta preencher,
+                               caso contrário deixe em branco.
+                            </p>
+                        </page>
+                    </notebook>
+                    <footer>
+                        <button icon="gtk-ok" colspan="1" name="act_getfile" string="Submeter"
+                                type="object"/>
+                        <button icon="gtk-cancel" colspan="1" name="act_cancel" special="cancel"
+                                string="Cancelar" type="object"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <!-- FIM ALTERAR GUIA -->
+
+    </data>
+</odoo>

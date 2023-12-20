@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="tree_ir_sequence_atcud" model="ir.ui.view">
+            <field name="name">tree_ir_sequence_atcud</field>
+            <field name="model">ir.sequence.atcud</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="sequence_id"/>
+                    <field name="codigo_validacao_serie"/>
+                    <field name="identificador_serie"/>
+                    <field name="inicio_numeracao"/>
+                    <field name="tipo_documento"/>
+                    <button name="open_wizard" string="Adicionar ATCUD" type="object" class="btn-primary"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_ir_sequence_atcud" model="ir.actions.act_window">
+            <field name="name">Séries ATCUD</field>
+            <field name="res_model">ir.sequence.atcud</field>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="tree_ir_sequence_atcud"/>
+            <field name="target">current</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="sequence_view_codigo_validacao_serie" model="ir.ui.view">
+            <field name="name">sequence_view_codigo_validacao_serie</field>
+            <field name="model">ir.sequence</field>
+            <field name="inherit_id" ref="base.sequence_view"/>
+            <field name="arch" type="xml">
+                <field name="implementation" position="after">
+                    <field name="codigo_validacao_serie" attrs="{'invisible': [('use_date_range', '=', True)]}"/>
+               </field>
+                <xpath expr="/form/sheet/notebook/page/field[@name='date_range_ids']/tree/field[@name='number_next_actual']"
+                       position="before">
+                    <field name="codigo_validacao_serie"/>
+               </xpath>
+            </field>
+        </record>
+		
+    </data>
+</odoo>

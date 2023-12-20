@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--  vista do assistente -->
+        <record id="wizard_cancelar_so_form" model="ir.ui.view">
+            <field name="name">Motivo do Cancelamento</field>
+            <field name="model">wizard.cancelar.sale</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Motivo do Cancelamento">
+                    <group>
+                        <field name="descricao_cancel"/>
+                    </group>
+                    <footer>
+                        <button icon="fa-arrow-left" name="act_cancel" string="Cancelar SO" type="object"/>
+                        ou
+                        <button icon="fa-close" name="act_fechar" string="Fechar" type="object"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_wizard_cancelar_so" model="ir.actions.act_window">
+            <field name="name">Motivo do Cancelamento</field>
+            <field name="res_model">wizard.cancelar.sale</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="wizard_cancelar_so_form"/>
+            <field name="target">new</field>
+        </record>
+
+        <record model="ir.ui.view" id="sale_form_inherit_certs_cancelar_so">
+            <field name="name">sale_form_inherit_certs_cancelar</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <button name="action_cancel" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </button>
+                <button name="action_cancel" position="after">
+                    <button name="%(action_wizard_cancelar_so)d" type='action' string="Cancelar"
+                            attrs="{'invisible': [('state', '=', 'cancel')]}"/>
+                </button>
+            </field>
+        </record>
+
+    </data>
+</odoo>

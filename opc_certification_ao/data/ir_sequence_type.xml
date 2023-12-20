@@ -1,0 +1,74 @@
+<odoo>
+    <data noupdate="1">
+
+        <record id="in_invoice_type" model="ir.sequence">
+            <field name="name">Faturas de Compras</field>
+            <field name="code">account.invoice.in_invoice</field>
+        </record>
+
+        <record id="out_invoice_type" model="ir.sequence">
+            <field name="name">Faturas de Vendas</field>
+            <field name="code">account.invoice.out_invoice</field>
+        </record>
+
+        <record id="in_refund_type" model="ir.sequence">
+            <field name="name">NC de Compras</field>
+            <field name="code">account.invoice.in_refund</field>
+        </record>
+
+        <record id="out_refund_type" model="ir.sequence">
+            <field name="name">NC de Vendas</field>
+            <field name="code">account.invoice.out_refund</field>
+        </record>
+
+        <record id="geral_pt_type" model="ir.sequence">
+            <field name="name">Geral</field>
+            <field name="code">account.journal</field>
+        </record>
+
+        <!-- Sequences for sale.order -->
+        <record id="seq_sale_order_or" model="ir.sequence">
+            <field name="name">Sales Order Or</field>
+            <field name="code">sale.order.or</field>
+            <field name="prefix">OR SO/</field>
+            <field name="padding">1</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+          <!-- Sequences for pro.forma -->
+        <record id="sq_sale_order_pf" model="ir.sequence">
+            <field name="name">Proforma</field>
+            <field name="code">pro.forma</field>
+            <field name="prefix">PP SO/</field>
+            <field name="padding">1</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+          <!-- Sequences for purchase.order -->
+        <record id="seq_sale_order_noe" model="ir.sequence">
+            <field name="name">Nota de Encomenda</field>
+            <field name="code">nota.encomenda</field>
+            <field name="prefix">NE SO/</field>
+            <field name="padding">1</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+          <!-- Sequences for cosignation -->
+        <record id="seq_sale_order_cosignation" model="ir.sequence">
+            <field name="name">Consignation Invoice</field>
+            <field name="code">cosignation</field>
+            <field name="prefix">FC SO/</field>
+            <field name="padding">1</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+    </data>
+</odoo>

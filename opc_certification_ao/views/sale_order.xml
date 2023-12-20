@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+        <record id="view_order_menu_so_id" model="ir.ui.view">
+            <field name="name">sale.order.form</field>
+            <field name="model">sale.order</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <field name="validity_date" position="before">
+                    <field name="type_doc" attrs="{'invisible': True}"/>
+                    <field name="certificated" attrs="{'invisible': True}"/>
+                </field>
+               <xpath expr="//button[@name='action_quotation_send']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//button[@name='action_quotation_send']" position="after">
+                    <button name="certify" type="object" string="Certify"
+                            attrs="{'invisible':[('certificated', '=', True)]}"
+                            confirm="After this action you can not change this sale order anymore. You will have to
+                                     create a new one or duplicate. Do you wish to proceed?" class="oe_highlight"/>
+                    <button name="action_quotation_send" type="object" string="Certify and Send Email"
+                            attrs="{'invisible': ['|', ('certificated', '=', True),('state', '!=', 'draft')]}"
+                            confirm="After this action you can not change this sale order anymore. You will have to
+                                     create a new one or duplicate. Do you wish to proceed?" class="oe_highlight"/>
+                </xpath>
+                <xpath expr="//button[@name='action_quotation_send' and @states='sent,sale']" position="replace">
+                    <button name="action_quotation_send" string="Enviar por Email" type="object"
+                            confirm="After this action you can not change this sale order anymore. You will have to
+                                     create a new one or duplicate. Do you wish to proceed?"
+                            attrs="{'invisible': ['|',('certificated', '=', True),('state', 'not in', ['sent','sale'])]}"/>
+                    <button name="action_quotation_send" string="Enviar por Email" type="object"
+                            attrs="{'invisible': [('certificated', '!=', True)]}"/>
+                </xpath>
+                <field name="require_payment" position="after">
+                    <field name="descricao_cancel"
+                           attrs="{'readonly': [('state', '=', 'cancel')],
+                                    'invisible': [('state', '!=', 'cancel')]}"/>
+                    <field name="old_name_quotation" attrs="{'invisible': [('old_name_quotation', '==', False)]}"/>
+                    <field name="old_name_proforma" attrs="{'invisible': [('old_name_proforma', '==', False)]}"/>
+                    <field name="old_name" attrs="{'invisible': [('old_name', '==', False)]}"/>
+                </field>
+                <field name="order_line" position="attributes">
+                    <attribute name="attrs">{'readonly':[('certificated','=', True)]}</attribute>
+                </field>
+                <field name="payment_term_id" position="attributes">
+                    <attribute name="attrs">{'readonly':[('certificated','=', True)]}</attribute>
+                </field>
+                <field name="fiscal_position_id" position="attributes">
+                    <attribute name="attrs">{'readonly':[('certificated','=', True)]}</attribute>
+                </field>
+                <field name="origin" position="attributes">
+                    <attribute name="attrs">{'readonly':[('certificated','=', True)]}</attribute>
+                </field>
+                <field name="user_id" position="attributes">
+                    <attribute name="attrs">{'readonly':[('certificated','=', True)]}</attribute>
+                </field>
+                <field name="team_id" position="attributes">
+                    <attribute name="attrs">{'readonly':[('certificated','=', True)]}</attribute>
+                </field>
+                <field name="client_order_ref" position="attributes">
+                    <attribute name="attrs">{'readonly':[('certificated','=', True)]}</attribute>
+                </field>
+                <field name="partner_id" position="attributes">
+                    <attribute name="attrs">{'readonly':[('certificated','=', True)]}</attribute>
+                </field>
+                <field name="sale_order_template_id" position="attributes">
+                    <attribute name="attrs">{'readonly':[('certificated','=', True)]}</attribute>
+                </field>
+                <field name="validity_date" position="attributes">
+                    <attribute name="attrs">{'readonly':[('certificated','=', True)]}</attribute>
+                </field>
+                <field name="date_order" position="attributes">
+                    <attribute name="attrs">{'readonly':[('certificated','=', True)]}</attribute>
+                </field>
+            </field>
+        </record>
+
+        <!-- Bool Certificado na tree do SO-->
+        <record id="view_order_tree_so_id" model="ir.ui.view">
+            <field name="name">sale.order.tree</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_quotation_tree_with_onboarding"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="inside">
+                    <field name="certificated" />
+                </xpath>
+            </field>
+        </record>
+
+        <!--Proforma Page-->
+        <record id="action_proforma_with_onboarding" model="ir.actions.act_window">
+            <field name="name">Proformas</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_id" ref="sale.view_quotation_tree_with_onboarding"/>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
+            <field name="search_view_id" ref="sale.sale_order_view_search_inherit_quotation"/>
+            <field name="context">{'search_default_my_quotation': 1, 'default_type_doc': 'PP'}</field>
+            <field name="domain">[('type_doc', '=', 'PP'),('state', 'not in', ('sale', 'done'))]</field>
+        </record>
+        <menuitem id="menu_sale_proforma"
+                action="action_proforma_with_onboarding"
+                parent="sale.sale_order_menu"
+                sequence="1" groups="sales_team.group_sale_salesman"/>
+
+<!--        Quotations Page-->
+        <menuitem id="sale.menu_sale_quotations"
+                action="sale.action_quotations_with_onboarding"
+                parent="sale.sale_order_menu"
+                sequence="1" groups="sales_team.group_sale_salesman"/>
+        <record id="sale.action_quotations_with_onboarding" model="ir.actions.act_window">
+            <field name="name">Quotations</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_id" ref="sale.view_quotation_tree_with_onboarding"/>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
+            <field name="search_view_id" ref="sale.sale_order_view_search_inherit_quotation"/>
+            <field name="context">{'search_default_my_quotation': 1, 'default_type_doc': 'OR'}</field>
+            <field name="domain">[('type_doc', 'in', ('OR', 'NE')),('state', 'not in', ('sale', 'done'))]</field>
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Create a new quotation, the first step of a new sale!
+              </p><p>
+                Once the quotation is confirmed by the customer, it becomes a sales order.<br/> You will be able to create an invoice and collect the payment.
+              </p>
+            </field>
+        </record>
+
+        <!--        Consignation Page-->
+        <record id="action_consignation_with_onboarding" model="ir.actions.act_window">
+            <field name="name">Consignations</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_id" ref="sale.view_quotation_tree_with_onboarding"/>
+            <field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
+            <field name="search_view_id" ref="sale.sale_order_view_search_inherit_quotation"/>
+            <field name="context">{'search_default_my_quotation': 1, 'default_type_doc': 'FC'}</field>
+            <field name="domain">[('type_doc', '=', 'FC')]</field>
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Create a new consignation, the first step of a new sale!
+              </p><p>
+                Once the cosignation is confirmed by the customer, you will be able to create an invoice and collect the payment.
+              </p>
+            </field>
+        </record>
+
+<!--        Sale Order search-->
+         <record id="sale_order_view_search_old_names_new" model="ir.ui.view">
+            <field name="name">sale.order.search.old.names</field>
+            <field name="model">sale.order</field>
+            <field name="mode">extension</field>
+            <field name="priority">10</field>
+            <field name="inherit_id" ref="sale.view_sales_order_filter"/>
+            <field name="arch" type="xml">
+                    <xpath expr="//field[@name='name']" position="replace">
+                        <field name="name" string="Sales Order"
+                               filter_domain="['|', '|', '|', '|',('name', 'ilike', self), ('partner_id.name', 'ilike', self),
+                                ('old_name', 'ilike', self), ('old_name_quotation', 'ilike', self),
+                                ('old_name_proforma', 'ilike', self)]"/>
+                    </xpath>
+            </field>
+        </record>
+
+</odoo>

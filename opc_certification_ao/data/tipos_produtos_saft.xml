@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="tipo_produto_saft_m" model="tipo.produto.saft">
+            <field name="code">M</field>
+            <field name="name">Mercadorias</field>
+        </record>
+
+        <record id="tipo_produto_saft_p" model="tipo.produto.saft">
+            <field name="code">P</field>
+            <field name="name">Matérias-primas, subsidiárias e de consumo</field>
+        </record>
+
+        <record id="tipo_produto_saft_a" model="tipo.produto.saft">
+            <field name="code">A</field>
+            <field name="name">Produtos acabados e intermédios</field>
+        </record>
+
+        <record id="tipo_produto_saft_s" model="tipo.produto.saft">
+            <field name="code">S</field>
+            <field name="name">Subprodutos, desperdícios e refugos</field>
+        </record>
+
+        <record id="tipo_produto_saft_t" model="tipo.produto.saft">
+            <field name="code">T</field>
+            <field name="name">Produtos e trabalhos em curso</field>
+        </record>
+
+    </data>
+</odoo>

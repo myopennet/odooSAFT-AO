@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+	
+        <!-- vista do assistente -->
+        <record id="wizard_import_saft_pt" model="ir.ui.view">
+            <field name="name">Import Standard Audit File</field>
+            <field name="model">wizard.l10n_pt.import.saft</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Importar SAFT-PT">
+                    <notebook>
+                        <page string="Critérios">
+                            <group col="2" fill="1" states="choose" colspan="4">
+                                <separator colspan="2" string="Import SAFT-PT"/>
+                                <field name="comp" widget="selection"/>
+                                <newline/>
+                                <field name="versao" invisible="1"/>
+                                <field name="partes"/>
+                                <field name="rollback"/>
+                                <field name="tipo" invisible="1"/>
+                                <newline/>
+                                <field invisible="1" name="state"/>
+                                <field name="file" filename="filename"/>
+                                <field name="filename"/>
+                            </group>
+                            <group col="1" fill="1" states="get" colspan="4">
+                                <separator colspan="4" string="Pronto"/>
+                                <field align="0.0" name="name" colspan="3"/>
+                                <newline/>
+                                <field align="0.0" name="erros" colspan="3"/>
+                                <newline/>
+                                <p>Importação terminada"</p>
+                            </group>
+                            <footer colspan="4">
+                                <button icon="fa-close" name="act_cancel" special="cancel" states="choose"
+                                        string="Cancelar" type="object"/>
+                                <button icon="fa-arrow-right" name="act_getfile" states="choose" string="Importar"
+                                        type="object"/>
+                            </footer>
+                        </page>
+                       <page string="Ajuda">
+                            <p>
+                                O programa vai importar todos os documentos contabilisticos do ficheiro saft para a
+                                base de dados.
+                            </p>
+
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_wizard_import_saft" model="ir.actions.act_window">
+            <field name="name">Importar ficheiro SAFT</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">wizard.l10n_pt.import.saft</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+
+
+    </data>
+</odoo>

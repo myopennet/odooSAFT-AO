@@ -1,0 +1,58 @@
+<odoo>
+    <data noupdate="1">
+
+        <function model="account.journal" name="write">
+            <value model="account.journal" eval="obj().search([('name', '=', 'Faturas de Cliente')]).ids"/>
+            <value eval="{'name': 'Faturas de Cliente',
+                          'sequence_id': ref('opc_certification_ao.vendas_sequence'),
+                          'refund_sequence_id': ref('opc_certification_ao.retorno_vendas_sequence'),
+                          'por_defeito': True,
+                          'allow_date': False,
+                          'code': 'V'
+            }"/>
+        </function>
+
+        <function model="account.journal" name="write">
+            <value model="account.journal" eval="obj().search([('name', '=', 'Faturas de Fornecedor')]).ids"/>
+            <value eval="{'sequence_id': ref('opc_certification_ao.compras_sequence'),
+                          'refund_sequence_id': ref('opc_certification_ao.retorno_compras_sequence'),
+                          'por_defeito': True,
+                          'allow_date': False,
+            }"/>
+        </function>
+
+        <function model="account.journal" name="write">
+            <value model="account.journal" eval="obj().search([('name', '=', 'Numerário')]).ids"/>
+            <value eval="{
+                          'sequence_id': ref('opc_certification_ao.banco_sequence'),
+                          'refund_sequence_id': ref('opc_certification_ao.sequence_pagamentos_fornecedores_caixa'),
+                          'por_defeito': True,
+                          'allow_date': False,
+                          'saft_inv_type': 'receipt'
+            }"/>
+        </function>
+
+        <function model="account.journal" name="write">
+            <value model="account.journal" eval="obj().search([('name', '=', 'Banco')]).ids"/>
+            <value eval="{
+                          'sequence_id': ref('opc_certification_ao.banco_sequence2'),
+                          'refund_sequence_id': ref('opc_certification_ao.sequence_pagamentos_fornecedores_bancos'),
+                          'por_defeito': False,
+                          'allow_date': False,
+                          'saft_inv_type': 'receipt'
+            }"/>
+        </function>
+
+        <record id="nd_journal" model="account.journal">
+            <field name="name">Nota de Debito</field>
+            <field name="code">ND</field>
+            <field name="type">sale</field>
+            <field name="sequence_id" ref="vendas_debito_sequence"/>
+            <field name="refund_sequence_id" ref="retorno_vendas_debito_sequence"/>
+            <field name="refund_sequence" eval="True"/>
+            <field name="saft_inv_type">ND</field>
+            <field name="allow_date" eval="False"/>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="model_hist_saft_rulee" model="ir.rule">
+            <field name="name">Historico Saft Regra</field>
+            <field name="model_id" ref="opc_certification_ao.model_hist_saft"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|',
+                ('empresa','=',False),
+                ('empresa','child_of',[user.company_id.id])]</field>
+            <field name="perm_read" eval="True"/>
+        </record>
+
+        <record model="ir.rule" id="nao_criar_pais">
+            <field name="name">model_res_country_just_read</field>
+            <field name="model_id" ref="base.model_res_country"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_unlink" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field eval="True" name="global"/>
+            <field name="domain_force">[]</field>
+        </record>
+
+        <record id="utilizador_financas_rule" model="ir.rule">
+            <field name="name">utilizador_financas</field>
+            <field ref="model_utilizador_financas" name="model_id"/>
+            <field eval="True" name="global"/>
+            <field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]
+            </field>
+        </record>
+
+    </data>
+</odoo>

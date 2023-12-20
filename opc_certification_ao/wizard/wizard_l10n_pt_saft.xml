@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="wizard_saft_pt" model="ir.ui.view">
+            <field name="name">Export Standard Audit File</field>
+            <field name="model">wizard.l10n_pt.saft</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form col="3" string="Gerar SAFT-PT">
+                    <notebook>
+                        <page string="Critérios">
+                            <group col="2" fill="1" states="choose" colspan="4">
+                                <separator colspan="2" string="Export SAFT-PT"/>
+                                <field name="comp" widget="selection"/>
+                                <field name="date_inicio" required="1"/>
+                                <field name="date_fim" required="1"/>
+                                <field name="tipo"/>
+<!--                                <field name="versao"/>-->
+                                <field name="state" invisible="1"/>
+                            </group>
+                            <group col="1" fill="1" states="get" colspan="4">
+                                <separator string="Pronto"/>
+                                <field name="name" invisible="1"/>
+                                <p>Guarde o ficheiro saft carregando aqui:
+                                <field name="filedata" nolabel="1" readonly="1" filename="name"/>
+                                <field name="info" widget="html" attrs="{'readonly':[('state','=','get')]}"/>
+                                </p>
+                            </group>
+                            <footer>
+                                <button icon="fa-close" name="act_cancel" special="cancel" states="choose"
+                                        string="Cancelar" type="object"/>
+                                <button icon="fa-arrow-right" name="act_getfile" states="choose" string="Exportar"
+                                        type="object"/>
+                                <button icon="fa-close" name="act_destroy" special="cancel" states="get"
+                                        string="Fechar" type="object"/>
+                            </footer>
+                        </page>
+                        <page string="Ajuda">
+                            <br/>
+                            <p>O ficheiro vai exportar todos os movimentos existentes na base de dados para o exercicio escolhido.</p>
+                            <p>Escolha o tipo conforme esteja a usar o Odoo apenas para a Contabilidade ou Facturacao ou para ambas.</p>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_wizard_saft" model="ir.actions.act_window">
+            <field name="name">Exportar ficheiro SAFT</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">wizard.l10n_pt.saft</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>

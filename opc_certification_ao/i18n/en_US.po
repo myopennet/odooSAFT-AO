@@ -1,0 +1,3700 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* opc_certification_ao
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-13 20:50+0000\n"
+"PO-Revision-Date: 2020-11-13 20:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid " não possui linhas!"
+msgstr " does not have lines!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/import_saft.py:0
+#, python-format
+msgid " não tem conta definida"
+msgstr " no account defined"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/qr_code_generation.py:0
+#: code:addons/opc_certification_ao/models/qr_code_generation.py:0
+#: code:addons/opc_certification_ao/models/qr_code_generation.py:0
+#: code:addons/opc_certification_ao/models/qr_code_generation.py:0
+#: code:addons/opc_certification_ao/models/qr_code_generation.py:0
+#: code:addons/opc_certification_ao/models/qr_code_generation.py:0
+#: code:addons/opc_certification_ao/models/qr_code_generation.py:0
+#: code:addons/opc_certification_ao/models/qr_code_generation.py:0
+#: code:addons/opc_certification_ao/models/qr_code_generation.py:0
+#: code:addons/opc_certification_ao/models/qr_code_generation.py:0
+#: code:addons/opc_certification_ao/models/qr_code_generation.py:0
+#: code:addons/opc_certification_ao/models/qr_code_generation.py:0
+#, python-format
+msgid "%.2f"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/product_product.py:0
+#, python-format
+msgid "%s (copy)"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "%s não possui Cidade!"
+msgstr "%s does not have city!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "%s não possui Código Postal!"
+msgstr "%s does not have zip code!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "%s não possui NIF!"
+msgstr "%s does not have VAT definied"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "%s não possui Nome!"
+msgstr "%s does not have name!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "%s não possui País!"
+msgstr "%s does not have country!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "%s não possui Rua!"
+msgstr "%s does not have street!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "%s não possui um Código Postal válido!"
+msgstr "%s does not have a valid zip code!"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "- Cliente"
+msgstr "- Customer"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "- Dados de Carga (Rua, Cidade, Código Postal, Pais)"
+msgstr "- Shipping Details(Street, City, Zip, Country)"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "- Dados de Descarga (Rua, Cidade, Código Postal, Pais)"
+msgstr "- Unload Details (Street, City, Zip, Country)"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "- Data da Guia"
+msgstr "- Picking Date"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "- Data de Carga (Tem de ser maior que a data de comunicação à AT)"
+msgstr "- Load Date (must be bigguer than date of AT communication"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "- Data de Descarga (Não é obrigatório preencher)"
+msgstr "- Unload Date (Not required)"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "- Linha(s) de Produto(s)"
+msgstr "- Product Lines"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "- Matricula (Não é obrigatório preencher)"
+msgstr "- Plate (not required)"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_import_saft__versao__1_03_01
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_saft__versao__1_03_01
+msgid "1.03_01"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_saft__versao__1_04_01
+msgid "1.04_01"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.res_partner_saft_inherit
+msgid "200111222"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.res_partner_saft_inherit
+msgid "500111222"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "A conta %s não tem taxonomia."
+msgstr "The account %s does have have taxonomy."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "A conta a pagar não está definida no parceiro %s."
+msgstr "The payable account is not defined on the partner %s."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "A conta a receber não está definida no parceiro %s."
+msgstr "The receivable account is not definied on the partner %s."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#, python-format
+msgid ""
+"A data do documento nao pode ser inferior a data de documentos validados "
+"anteriormente."
+msgstr ""
+"The document date cannot be less than the date of validated documents"
+"previously."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "A guia não possui número!"
+msgstr "The guide has no number!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "A guia não tem data de carga na aba Dados de Transporte!"
+msgstr "The bill has no loading date in the Transport Data tab!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "A guia tem de possuir um parceiro de destino!"
+msgstr "The guide must have a destination partner!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "A quantidade do produto não pode ser negativa."
+msgstr "The quantity of the product cannot be negative."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_account__tipo_conta__aa
+msgid "AA - Conta agregadora ou integradora da contabilidade analítica"
+msgstr "AA - Analytical accounting aggregating or integrating account"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_account__tipo_conta__am
+msgid "AM - Conta de movimento da contabilidade analítica"
+msgstr "AM - Analytical accounting movement account"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_account__tipo_conta__ar
+msgid "AR - Conta de 1.º grau da contabilidade analítica"
+msgstr "AR - 1st degree account of analytical accounting"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__call_at
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking_type__call_at
+msgid "AT automático"
+msgstr "Automatic AT"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__atcud
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__atcud
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__atcud
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__atcud
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__atcud
+msgid "ATCUD"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.action_wizard_alert_atcud
+msgid "ATCUD em falta"
+msgstr "ATCUD missing"
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_account_account
+msgid "Account"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_account_move_reversal
+msgid "Account Move Reversal"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#: code:addons/opc_certification_ao/models/account_payment.py:0
+#: code:addons/opc_certification_ao/models/sale_order.py:0
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "Aceder ao menu de Configuração ATCUD"
+msgstr "Access the ATCUD Configuration menu"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_account__active
+msgid "Active"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.tree_ir_sequence_atcud
+msgid "Adicionar ATCUD"
+msgstr "Add ATCUD"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alert_atcud
+msgid "Adicionar novo Código"
+msgstr "Add new Code"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_order_menu_so_id
+msgid ""
+"After this action you can not change this sale order anymore. You will have "
+"to                                      create a new one or duplicate. Do "
+"you wish to proceed?"
+msgstr ""
+"After this action you can not change this sale order anymore. You will have"
+"to create a new one or duplicate. Do"
+"do you wish to proceed?"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_at_code_manual
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alterar_guia
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_exp_stock
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_import_saft_pt
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_saft_pt
+msgid "Ajuda"
+msgstr "Help"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "Ajuda AT"
+msgstr "AT Helper"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_journal__transaction_type__j
+msgid "Ajustamentos"
+msgstr "Adjustments"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_journal__saft_inv_type__aa
+msgid "Alienação de Activos"
+msgstr "Disposal of Assets"
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.action_wizard_alterar_guia
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alterar_guia
+msgid "Alterar"
+msgstr "Change"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "Alterar AT"
+msgstr "Change AT"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alert_atcud
+msgid "Alterar Prefixo"
+msgstr "Change Prefix"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alterar_guia
+msgid "Alterar guia cancelada"
+msgstr "Change Canceled Picking"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid ""
+"Apenas pode exportar a versão 1.04_01 para datas iguais ou superiores a "
+"2017-07-01."
+msgstr ""
+"You can only export version 1.04_01 for dates equal to or greater than"
+"2017-07-01."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_journal__transaction_type__a
+msgid "Apur. Resultados"
+msgstr "Apur. Results"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid ""
+"Após o pedido, no caso de sucesso o sistema coloca o código no campo Código AT. Em caso\n"
+"                                de insucesso utiliza o mesmo campo para apresentar a mensagens de erro."
+msgstr ""
+"After the request, in case of success the system places the code in the AT Code field. In case \n"
+"unsuccessful uses the same field to display error messages."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_exp_stock__tipo_prod__armazenavel
+msgid "Armazenável"
+msgstr "Stockable"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_stock_picking__call_at
+msgid ""
+"Assinalar (visto) caso seja para comunicar a AT a guia quando esta for "
+"validada."
+msgstr ""
+"Tick (check) if it is to communicate the TA to the guide when it is"
+"validated."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_utilizador_financas__por_defeito
+msgid ""
+"Assinalar (visto) caso seja para o sistema preencher automaticamente a data "
+"de carga, matricula,etc."
+msgstr ""
+"Tick (check) if the system is to automatically fill in the date"
+"cargo, registration, etc."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_stock_picking_type__call_at
+msgid ""
+"Assinalar (visto) caso seja por defeito para comunicar a AT as guias de "
+"remessa quando estas forem validadas."
+msgstr ""
+"Tick (check) if it is by default to communicate the TA's"
+"shipment when they are validated."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_stock_picking__stop_update
+msgid ""
+"Assinalar caso os endereços tenham sido editados manualmente e não os "
+"pertenda mudifar automáticamente ao mudar de cliente ou localização."
+msgstr ""
+"Check if addresses have been edited manually and not"
+"want to change automatically when changing clients or locations."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_res_partner__self_bill_purch
+#: model:ir.model.fields,help:opc_certification_ao.field_res_users__self_bill_purch
+msgid ""
+"Assinale se existe acordo de auto-facturação para as compras ao parceiro"
+msgstr ""
+"Check if there is a self-billing agreement for partner purchases"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_res_partner__self_bill_sales
+#: model:ir.model.fields,help:opc_certification_ao.field_res_users__self_bill_sales
+msgid ""
+"Assinale se existe acordo de auto-facturação para as vendas a este parceiro"
+msgstr ""
+"Check if there is a self-billing agreement for partner purchases"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_res_partner__cash_vat_scheme_indicator
+#: model:ir.model.fields,help:opc_certification_ao.field_res_users__cash_vat_scheme_indicator
+msgid "Assinale se houver adesão ao regime de iva de caixa."
+msgstr "Tick if there is adherence to the cash vat regime."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_res_company__cash_vat_scheme_indicator
+msgid "Assinale se houver adsão ao regime de iva de caixa."
+msgstr "Please tick if there is additions to the cash vat regime."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_res_company__third_parties_billing_indicator
+msgid ""
+"Assinale se respeitar a faturação emitida em nome e por conta de terceiros"
+msgstr ""
+"Please tick if there is additions to the cash vat regime."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_journal__self_billing
+msgid ""
+"Assinale, se este diário se destina a registar Auto-facturação. As facturas "
+"emitidas em substituição dos fornecedores, ao abrigo de acordos de auto-"
+"facturação, são assinaladas como tal no SAFT"
+msgstr ""
+"Check if this diary is intended to record Self-invoicing. The invoices"
+"issued in lieu of suppliers, under auto-agreements"
+"invoicing, are marked as such in SAFT"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/res.py:0
+#: code:addons/opc_certification_ao/models/res.py:0
+#: code:addons/opc_certification_ao/models/res.py:0
+#: code:addons/opc_certification_ao/models/res.py:0
+#, python-format
+msgid "Atenção"
+msgstr "Attention"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move_line.py:0
+#, python-format
+msgid "Atenção!"
+msgstr "Attention!"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_partner__self_bill_purch
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_users__self_bill_purch
+msgid "Auto Faturação para Compras"
+msgstr "Self Billing for Purchases"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_partner__self_bill_sales
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_users__self_bill_sales
+msgid "Auto Faturação para Vendas"
+msgstr "Self Billing for Sales"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal__self_billing
+msgid "Auto-Facturação"
+msgstr "Self-Billing"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_tax__autoliquidacao
+msgid "Auto-Liquidação"
+msgstr "Self-Clearance"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#, python-format
+msgid ""
+"Aviso\n"
+" A Fatura possui uma Nota de Crédito associada."
+msgstr ""
+"Warning \n"
+"The Invoice has an associated Credit Note."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/sale_order.py:0
+#, python-format
+msgid ""
+"Aviso\n"
+" Apenas é possível eliminar documentos no estado de rascunho e não certificados."
+msgstr ""
+"Warning \ n"
+"It is only possible to delete documents in draft state and not certified."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#: code:addons/opc_certification_ao/models/account_move_line.py:0
+#, python-format
+msgid ""
+"Aviso\n"
+" Apenas é possível eliminar documentos no estado de rascunho."
+msgstr ""
+"Warning \ n"
+"It is only possible to delete documents in draft state."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_tax__country_region__pt-ac
+msgid "Açores"
+msgstr "Azores"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_product_product__barcode
+msgid "Barcode"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.res_partner_saft_inherit
+msgid "CRC-Porto"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__cambio
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__cambio
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__cambio
+msgid "Cambio"
+msgstr "Exchange Rate"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_bank_statement_line__cambio
+#: model:ir.model.fields,help:opc_certification_ao.field_account_move__cambio
+#: model:ir.model.fields,help:opc_certification_ao.field_account_payment__cambio
+msgid "Cambio da moeda"
+msgstr "Exchange Rate"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.taxonomia_form_view
+msgid ""
+"Campo opcional que se destina a facilitar o preechimento das contas aquando "
+"da seleção da taxonomia. Ex: 213|214|215|216|217"
+msgstr ""
+"Warning \n"
+"It is only possible to delete documents in draft state."
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "Campos Obrigatórios e Validações:"
+msgstr "Mandatory Fields and Validations:"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__stock_picking__at_status__cancel
+msgid "Cancel"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_at_code_manual
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alert_atcud
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alterar_guia
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_recall_at
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.invoice_form_inherit_certs_cancelar
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.sale_form_inherit_certs_cancelar_so
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_exp_stock
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_import_saft_pt
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_saft_pt
+msgid "Cancelar"
+msgstr "Cancel"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_cancelar_fatura_form
+msgid "Cancelar Fatura"
+msgstr "Cancel Invoice"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_cancelar_so_form
+msgid "Cancelar SO"
+msgstr "Cancel SO"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "Carga"
+msgstr "Load"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_res_company__pais_certificacao
+msgid ""
+"Caso o campo esteja preechido na certificação este será consultado para "
+"verificar se as restrições se aplicam ou não."
+msgstr ""
+"If the field is filled in the certification it will be consulted for"
+"check whether the restrictions apply or not."
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid ""
+"Caso pretenda utilizar o serviço automático de pedido de código à AT deve "
+"comunicar o seu utilizador das finanças à equipa da Opencloud."
+msgstr ""
+"If you want to use the automatic code request service from AT you must"
+"communicate your finance user to the Opencloud team."
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid ""
+"Caso tenha ocorrido um erro pode 'Reenviar Pedido AT', se a data de carga já tiver\n"
+"                                passado esta será actualizada para a data actual."
+msgstr ""
+"If an error has occurred, you can 'Resend AT Request', if the loading date is already \ n"
+"past this will be updated to the current date."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_bank_statement_line__ref_saft_inv_type
+#: model:ir.model.fields,help:opc_certification_ao.field_account_journal__saft_inv_type
+#: model:ir.model.fields,help:opc_certification_ao.field_account_move__ref_saft_inv_type
+#: model:ir.model.fields,help:opc_certification_ao.field_account_payment__ref_saft_inv_type
+msgid ""
+"Categorias para classificar os documentos comerciais, na exportação do SAFT"
+msgstr ""
+"Categories for classifying commercial documents when exporting SAFT"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_journal__transaction_type
+msgid ""
+"Categorias para classificar os movimentos contabilísticos ao exportar o SAFT"
+msgstr ""
+"Categories for classifying accounting movements when exporting SAFT"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__certificated
+msgid "Certificated"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_order_menu_so_id
+msgid "Certify"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_order_menu_so_id
+msgid "Certify and Send Email"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__hash_control
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__hash_control
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__hash_control
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__hash_control
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__hash_control
+msgid "Chave"
+msgstr "Key"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__inicio_numeracao_boolean
+msgid "Check if Inicio de Numeracao"
+msgstr "Check if Numbering Start"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_journal__refund_sequence
+msgid ""
+"Check this box if you don't want to share the same sequence for invoices and"
+" credit notes made from this journal"
+msgstr ""
+"Check this box if you don't want to share the same sequence for invoices and"
+"credit notes made from this journal"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__carga_cidade
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__descarga_cidade
+msgid "Cidade"
+msgstr "City"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo__name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_tipo_empresa__name
+msgid "Classificação Plano de Contas"
+msgstr "Chart of Accounts"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_import_saft__partes__clientes
+msgid "Clientes"
+msgstr "Customers"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alert_atcud
+msgid ""
+"Clique em \"Ver todas as séries ATCUD\" para configurar as séries em falta."
+msgstr ""
+"Click \ View all ATCUD series to configure the missing series."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_account__code
+msgid "Code"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.product_template_search_view_default_code
+msgid "Codigo"
+msgstr "Code"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_stock_picking__manual
+msgid "Coloque um visto se a Guia tiver sido previamente criada à mão."
+msgstr "Place a checkmark if the Guide has been previously created by hand."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_stock_picking__usar_dados_empresa
+msgid ""
+"Coloque um visto se pretender usar os dados da empresa nos dados de "
+"descarga."
+msgstr ""
+"Place a checkmark if you want to use your business data in the data for"
+"discharge."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_stock_picking__usar_dados_client
+msgid ""
+"Coloque um visto se pretender usar os dados de cliente nos dados de "
+"descarga."
+msgstr ""
+"Place a tick if you want to use customer data in"
+"discharge."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__empresa
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock__comp
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__comp
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft__comp
+msgid "Companhia"
+msgstr "Company"
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.action_wizard_alert_atcud_menu
+#: model:ir.ui.menu,name:opc_certification_ao.menu_list_seqs_atcud
+msgid "Configurar ATCUD"
+msgstr "ATCUD Configuration"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/import_saft.py:0
+#, python-format
+msgid "Configurar o imposto com o Nivel de Taxa %s com as contas definidas."
+msgstr "Configure tax with Rate Level% s with defined accounts."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__confirmed
+msgid "Confirmed"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_company__conservatoria
+msgid "Conservatoria"
+msgstr "Conservatory"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_partner__conservatoria
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_users__conservatoria
+msgid "Conservatória"
+msgstr "Conservatory"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_res_company__conservatoria
+#: model:ir.model.fields,help:opc_certification_ao.field_res_partner__conservatoria
+#: model:ir.model.fields,help:opc_certification_ao.field_res_users__conservatoria
+msgid "Conservatória do registo comercial"
+msgstr "Conservatory"
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.action_consignation_with_onboarding
+#: model:ir.ui.menu,name:opc_certification_ao.menu_sale_consignation
+msgid "Consignations"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__sale_order__type_doc__fc
+msgid "Consignação"
+msgstr "Consignation"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_exp_stock__tipo_prod__consumivel
+msgid "Consumível"
+msgstr "Consumable"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_account__parent_id
+msgid "Conta Pai"
+msgstr "Parent Account"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_product_product__property_account_refund_income_id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_product_template__property_account_refund_income_id
+msgid "Conta de Notas de Credito Clientes"
+msgstr "Customer Credit Notes Account"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_product_product__property_account_refund_expense_id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_product_template__property_account_refund_expense_id
+msgid "Conta de Notas de Credito Fornecedores"
+msgstr "Suppliers Credit Notes Account"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_company__account_adjustments_purchase
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_config_settings__account_adjustments_purchase
+msgid "Conta de acerto de casa decimal para compra"
+msgstr "Decimal settlement account for purchase"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_company__account_adjustments_sale
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_config_settings__account_adjustments_sale
+msgid "Conta de acertos de casa decimal para venda"
+msgstr "Decimal settlement account for sale"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_product_product__property_account_refund_expense_id
+#: model:ir.model.fields,help:opc_certification_ao.field_product_product__property_account_refund_income_id
+#: model:ir.model.fields,help:opc_certification_ao.field_product_template__property_account_refund_expense_id
+#: model:ir.model.fields,help:opc_certification_ao.field_product_template__property_account_refund_income_id
+msgid "Conta usada por defeito em notas de credito de clientes."
+msgstr "Account used by default in customer credit notes."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_saft__tipo__c
+msgid "Contabilidade"
+msgstr "Accounting"
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_account__children_ids
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia__contas
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo_linhas__contas
+msgid "Contas"
+msgstr "Accounts"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__file_content
+msgid "Conteudo do Ficheiro"
+msgstr "File Content"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_tax__country_region__pt
+msgid "Continente"
+msgstr "Continent"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.res_partner_saft_inherit
+msgid "Contribuinte"
+msgstr "VAT"
+
+#. module: opc_certification_ao
+#: model_terms:ir.actions.act_window,help:opc_certification_ao.action_consignation_with_onboarding
+msgid "Create a new consignation, the first step of a new sale!"
+msgstr "Create a new consignation, the first step of a new sale!"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_call_at_wiz__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_atcud__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_pedidos_at_historico__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo_linhas__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_tipo_empresa__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_tipo_produto_saft__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_utilizador_financas__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_alterar_guia__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_fatura__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_sale__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_manual_code__create_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_recall_at__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_call_at_wiz__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_atcud__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_pedidos_at_historico__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo_linhas__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_tipo_empresa__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_tipo_produto_saft__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_utilizador_financas__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_alterar_guia__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_fatura__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_sale__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_manual_code__create_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_recall_at__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal__refund_sequence_id
+msgid "Credit Note Entry Sequence"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal__refund_sequence_number_next
+msgid "Credit Notes Next Number"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_exp_stock
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_import_saft_pt
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_saft_pt
+msgid "Critérios"
+msgstr "Criteria"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__currency_tax_info
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__currency_tax_info
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__currency_tax_info
+msgid "Câmbio"
+msgstr "Exchange Rate"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_pedidos_at_historico__at_code
+msgid "Cód. AT"
+msgstr "AT Code"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_pedidos_at_historico__name
+msgid "Cód. Documento"
+msgstr "Document Code"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_pedidos_at_historico__codigo_erro
+msgid "Cód. erro"
+msgstr "Error Code"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_tipo_empresa__code
+#: model:ir.model.fields,field_description:opc_certification_ao.field_tipo_produto_saft__code
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_res_partner_filter_opencloud
+msgid "Código"
+msgstr "Code"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__at_code
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_manual_code__name
+msgid "Código AT"
+msgstr "AT Code"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__carga_cp
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__descarga_cp
+msgid "Código Postal"
+msgstr "Zip Code"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alert_atcud
+msgid "Código de Validação da Série fornecido pela AT"
+msgstr "Series Validation Code provided by AT"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__codigo_validacao_serie
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence__codigo_validacao_serie
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_atcud__codigo_validacao_serie
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_date_range__codigo_validacao_serie
+msgid "Código de Validação de Série"
+msgstr "Series Validation Code"
+
+#. module: opc_certification_ao
+#: model:ir.model.constraint,message:opc_certification_ao.constraint_tipo_produto_saft_code_unique
+msgid "Código deve ser único!"
+msgstr "Code must be unique!"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_partner__fin_code
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_users__fin_code
+msgid "Código do serviço de finanças"
+msgstr "Finance Service Code"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_alert_atcud__codigo_validacao_serie
+#: model:ir.model.fields,help:opc_certification_ao.field_ir_sequence__codigo_validacao_serie
+#: model:ir.model.fields,help:opc_certification_ao.field_ir_sequence_atcud__codigo_validacao_serie
+#: model:ir.model.fields,help:opc_certification_ao.field_ir_sequence_date_range__codigo_validacao_serie
+msgid "Código único para esta série a fornecer pela AT."
+msgstr "Unique code for this series to be provided by AT."
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.account_tax_saft_inherit
+msgid "Dados SAFT"
+msgstr "Saft Details"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.account_tax_saft_inherit
+msgid "Dados Saft"
+msgstr "Saft Details"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alert_atcud
+msgid "Dados a Enviar à AT"
+msgstr "Data to be sent to AT"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "Dados de Carga"
+msgstr "Load Data"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "Dados de Descarga"
+msgstr "Discharge Data"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "Dados de Transporte"
+msgstr "Transport Data"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock__data
+msgid "Data"
+msgstr "Date"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_tax__expiration_date
+msgid "Data Expiração"
+msgstr "Expiration Date"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__data_prevista_fim
+msgid "Data Prevista de Fim"
+msgstr "Expected End Date"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__data_prevista_inicio
+msgid "Data Prevista de Início"
+msgstr "Expected Start Date"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_call_at_wiz__data
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__data_carga
+msgid "Data de Carga"
+msgstr "Load Date"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__data_criacao
+msgid "Data de Criação"
+msgstr "Creation date"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__data_descarga
+msgid "Data de Descarga"
+msgstr "Discharge Date"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__data_fim
+msgid "Data de Fim"
+msgstr "End Date"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__data_inicio
+msgid "Data de Inicio"
+msgstr "Start date"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft__date_inicio
+msgid "Data de Início"
+msgstr "Start date"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__write_date
+msgid "Data de alteração"
+msgstr "Change date"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_alterar_guia__data_carga
+msgid "Data de carga"
+msgstr "Loading date"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__system_entry_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__system_entry_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__system_entry_date
+msgid "Data de confirmação"
+msgstr "Confirmation date"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_alterar_guia__data_descarga
+msgid "Data de descarga"
+msgstr "Discharge date"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft__date_fim
+msgid "Data do Fim"
+msgstr "End Date"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__hash_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__hash_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__hash_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__hash_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__hash_date
+msgid "Data em que o hash foi gerado"
+msgstr "Date the hash was generated"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal__refund_sequence
+msgid "Dedicated Credit Note Sequence"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_alert_atcud__data_prevista_inicio
+msgid "Deixe vazio para definir novo código sem datas"
+msgstr "Leave empty to set new code without dates"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "Descarga"
+msgstr "Discharge"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#: code:addons/opc_certification_ao/models/stock.py:0
+#: code:addons/opc_certification_ao/models/stock.py:0
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "Deve definir a sequência como \"Sem Espaços\"."
+msgstr "You must define the sequence as \ "No Spaces \"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/ir_module_module.py:0
+#, python-format
+msgid ""
+"Deverá actualizar o números de módulos nos clientes remotos da Opencloud "
+"antes de fazer uninstall"
+msgstr ""
+"You must update the number of modules on remote Opencloud clients"
+"before uninstalling"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alert_atcud
+msgid ""
+"Deverá utilizar os seguintes dados para pedir o código AT para esta série:"
+msgstr ""
+"You should use the following data to request the AT code for this series:"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_journal__saft_inv_type__da
+msgid "Devolução de Activos"
+msgstr "Return of Assets"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_account__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move_reversal__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_tax__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_call_at_wiz__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_module_module__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_atcud__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_date_range__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_pedidos_at_historico__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_product_product__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_product_template__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_company__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_partner__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_users__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_move__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking_type__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo_linhas__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_tipo_empresa__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_tipo_produto_saft__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_utilizador_financas__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_alterar_guia__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_fatura__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_sale__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_manual_code__display_name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_recall_at__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_company__open_journal
+msgid "Diário de Abertura"
+msgstr "Opening Diary"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal__por_defeito
+msgid "Diário por defeito"
+msgstr "Default journal"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_journal__integrado
+msgid "Documentos integrados de outra aplicação"
+msgstr "Integrated documents from another application"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__stock_picking__at_status__draft
+msgid "Draft"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_res_partner_filter_opencloud
+msgid "E-Mail"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_bank_statement_line__amount_by_group
+#: model:ir.model.fields,help:opc_certification_ao.field_account_move__amount_by_group
+#: model:ir.model.fields,help:opc_certification_ao.field_account_payment__amount_by_group
+msgid "Edit Tax amounts if you encounter rounding issues."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo__company_id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_utilizador_financas__company_id
+msgid "Empresa"
+msgstr "Company"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal__sequence_id
+msgid "Entry Sequence"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "Enviar pedido AT"
+msgstr "Send AT Request"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_order_menu_so_id
+msgid "Enviar por Email"
+msgstr "Send by Email"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/alert_atcud.py:0
+#, python-format
+msgid ""
+"Erro na sequência. \n"
+"O campo prefixo não pode incluir percentagens, a menos que defina sequências diferentes por período.\n"
+"\n"
+"Clique no botão em baixo \"Alterar Prefixo\" para fixar o ano corrente no prefixo em vez da variável com percentagem."
+msgstr ""
+"Error in sequence. \n"
+"The prefix field cannot include percentages, unless you define different strings per period. \n"
+"\n"
+"Click the button below \" Change Prefix \ "to set the current year to the prefix instead of the percentage variable."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#, python-format
+msgid ""
+"Erro!\n"
+" Deve definir a sequência como \"Sem Espaços\"."
+msgstr ""
+"You must define the sequence as \" No Spaces \ "."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__stock_picking__at_status__error
+msgid "Error"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__error_message
+msgid "Error Message"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "Error in TaxPercentage on payment "
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "Error in payment "
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "Error in payment type on payment "
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_saft_pt
+msgid ""
+"Escolha o tipo conforme esteja a usar o OpenERP apenas para a Contabilidade "
+"ou Facturacao ou para ambas."
+msgstr ""
+"Choose the type as you are using OpenERP for Accounting only"
+"or Invoicing or both."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_tax__country_region
+msgid "Espaço Fiscal"
+msgstr "Fiscal Space "
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_tax.py:0
+#, python-format
+msgid ""
+"Esse imposto está incluído em documentos contabilisticos, pelo que não pode "
+"alterar o seu montante ou se ele esta ou nao incluido no preco. Para "
+"proceder a estas alterações por favor crie um novo imposto."
+msgstr ""
+"This tax is included in accounting documents, so it cannot"
+"change its amount or whether or not it is included in the price. To"
+"make these changes please create a new tax."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_tax.py:0
+#, python-format
+msgid ""
+"Esse imposto está incluído em documentos contabilisticos, pelo que não pode "
+"eliminá-lo."
+msgstr ""
+"This tax is included in accounting documents, so it cannot"
+"eliminate it."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/res.py:0
+#, python-format
+msgid ""
+"Esse parceiro está incluido em documentos contabilisticos, pelo que não pode"
+" alterar o seu código ou NIF."
+msgstr ""
+"That partner is included in accounting documents, so it cannot"
+"change your code or TIN."
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_res_config_settings
+msgid ""
+"Esta classe e criada com o objetivo de criar 2 novos campos nas "
+"configuracoes da contabilidadeestes dois campos servem para as contas de "
+"acerto de casos decimais, tanto de compras como de vendas, serem "
+"configuraveis."
+msgstr ""
+"This class is created with the objective of creating 2 new fields in"
+"accounting settings these two fields are for accounts"
+"correct decimal cases, both for purchases and sales, are"
+"configurable."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/res.py:0
+#, python-format
+msgid "Esta funcionalidade ainda não está disponível!"
+msgstr "This feature is not yet available!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/alert_atcud.py:0
+#, python-format
+msgid ""
+"Esta sequência deste período já tem código de validação para documentos "
+"anteriores"
+msgstr ""
+"This sequence of this period already has a validation code for documents"
+"previous"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/alert_atcud.py:0
+#, python-format
+msgid "Esta sequência já tem código de validação para documentos anteriores"
+msgstr "This string already has a validation code for previous documents"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__state
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock__state
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__state
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft__state
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_manual_code__at_status
+msgid "Estado"
+msgstr "State"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__at_status
+msgid "Estado AT"
+msgstr "AT state"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_pedidos_at_historico__doc_state
+msgid "Estado do documento"
+msgstr "Document State"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/product_product.py:0
+#, python-format
+msgid ""
+"Este produto está incluido em documentos contabilisticos, pelo que não pode "
+"alterar o seu código."
+msgstr "This string already has a validation code for previous documents"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alterar_guia
+msgid ""
+"Este wizard permite criar um duplicado da guia com o estado AT em rascunho\n"
+"                               e com a Data de Carga, Data de Descarga e Veículo alterados.\n"
+"                               Para alterar qualquer um dos campos assinalados basta preencher,\n"
+"                               caso contrário deixe em branco."
+msgstr ""
+"This wizard allows you to create a duplicate of the tab with the AT status in draft \n"
+"and with the Load Date, Unload Date and Vehicle changed. \n"
+"To change any of the marked fields just fill in, \n"
+"otherwise leave it blank."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move_line.py:0
+#: code:addons/opc_certification_ao/models/sale_order.py:0
+#, python-format
+msgid "Está a utilizar mais do que um imposto!"
+msgstr "You are using more than one tax!"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_saft_pt
+msgid "Export SAFT-PT"
+msgstr "Export Saft-T"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_exp_stock
+msgid "Export Stock"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_exp_stock
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_saft_pt
+msgid "Exportar"
+msgstr "Export"
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.action_exp_stock
+#: model:ir.ui.menu,name:opc_certification_ao.menu_exp_stock
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_exp_stock
+msgid "Exportar Stock"
+msgstr "Export Stock"
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_wizard_exp_stock
+msgid ""
+"Exportar Stock AT - Menu: Contabilidade - Relatorios - Saft - Exportar Stock"
+msgstr ""
+"Export Stock AT - Menu: Accounting - Reports - Saft - Export Stock"
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.action_exp_stock_valorizado
+#: model:ir.ui.menu,name:opc_certification_ao.menu_exp_stock_valorizado
+msgid "Exportar Stock Valorizado"
+msgstr "Export Valued Stock"
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.action_wizard_saft
+#: model:ir.ui.menu,name:opc_certification_ao.menu_wizard_saft
+msgid "Exportar ficheiro SAFT"
+msgstr "Export Saft File"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__hist_saft__tipo__export
+msgid "Exportação"
+msgstr "Export"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_journal__saft_inv_type__ft
+msgid "Factura"
+msgstr "Invoice"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_journal__saft_inv_type__fr
+msgid "Factura Recibo"
+msgstr "Receipt Invoice"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_import_saft__tipo__f
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_saft__tipo__f
+msgid "Facturação"
+msgstr "Invoicing"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid ""
+"Falta configurar o motivo de isenção (este tem de ter pelo menos 6 "
+"caracteres)."
+msgstr ""
+"Exemption reason remains to be configured (it must be at least 6"
+"characters)."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "Falta definir dados da empresa!"
+msgstr "We still need to define company data!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#: code:addons/opc_certification_ao/models/account_payment.py:0
+#: code:addons/opc_certification_ao/models/sale_order.py:0
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid ""
+"Falta definir o codigo de validação de sequência AT. \n"
+"Por favor aceda a Faturação \\ Configuração \\ Configurar ATCUD ou clique no link abaixo."
+msgstr ""
+"The AT sequence validation code is missing. \ N"
+"Please go to Billing \\ Configuration \\ Configure ATCUD or click on the link below."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#: code:addons/opc_certification_ao/models/account_payment.py:0
+#: code:addons/opc_certification_ao/models/sale_order.py:0
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid ""
+"Falta definir o codigo de validação de sequência AT. Para configurar, deverá"
+" aceder ao menu Faturação -> Configuração -> Configurar ATCUD"
+msgstr ""
+"The AT sequence validation code is missing. To configure, you must"
+"access the Billing menu -> Configuration -> Configure ATCUD"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "Falta definir o diario de abertura na empresa."
+msgstr "We still need to define the opening diary in the company."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "Falta definir o nome e o NIF do parceiro associado ao endereço."
+msgstr "It remains to define the name and TIN of the partner associated with the address."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "Falta definir o utilizador das finanças com permissões WDT!"
+msgstr "The finance user with WDT permissions remains to be defined!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "Falta definir os dados de carga na aba Inf. Adicional!"
+msgstr "We still need to define the load data on the Additional Info tab!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "Falta definir os dados de descarga na aba Inf. Adicional!"
+msgstr "The download data is missing in the Additional Info tab!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/import_saft.py:0
+#, python-format
+msgid ""
+"Falta diário\n"
+" Não existe um diario do tipo: recebimento com visto em integrado."
+msgstr ""
+"Missing diary \n"
+"There is no diary of the type: receipt with integrated visa."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_journal__saft_inv_type__fs
+msgid "Fatura Simplificada"
+msgstr "Simplied Invoice"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_import_saft__partes__faturas
+msgid "Faturas"
+msgstr "Invoices"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal__manual
+msgid "Faturação Manual"
+msgstr "Manual Billing"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_company__third_parties_billing_indicator
+msgid "Faturação por Terceiros"
+msgstr "Third Party Billing"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.call_at_wiz
+msgid "Fazer Pedido"
+msgstr "Make a wish"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.call_at_wiz
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_cancelar_fatura_form
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_cancelar_so_form
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_saft_pt
+msgid "Fechar"
+msgstr "Close"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__file
+msgid "Ficheiro"
+msgstr "File"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock__filedata
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft__filedata
+msgid "File"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock__name
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft__name
+msgid "Filename"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo__end_date
+msgid "Fim"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.ui.menu,name:opc_certification_ao.financas_menu
+msgid "Finanças"
+msgstr "Finance"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__stop_update
+msgid "Fixar Endereços"
+msgstr "Fix Addresses"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__res_partner__tipo_cambio__fixo
+msgid "Fixo"
+msgstr "Fix"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_account__tipo_conta__ga
+msgid "GA - Conta agregadora ou integradora da contabilidade geral"
+msgstr "GA - General accounting aggregating or integrating account"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_account__tipo_conta__gm
+msgid "GM - Conta de movimento da contabilidade geral"
+msgstr "GM - General accounting movement account"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_account__tipo_conta__gr
+msgid "GR - Conta de 1.º grau da contabilidade geral"
+msgstr "GR - 1st grade account of general accounting"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_saft_pt
+msgid "Gerar SAFT-PT"
+msgstr "Generate SAFT-PT"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_account__tipo_conta
+msgid "Grupo da conta"
+msgstr "Account group"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_exp_stock
+msgid "Guarde o ficheiro carregando aqui:"
+msgstr "Save the file by clicking here:"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_saft_pt
+msgid "Guarde o ficheiro saft carregando aqui:"
+msgstr "Save the saft file by clicking here:"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__manual
+msgid "Guia Manual"
+msgstr "Manual Picking"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__is_gc
+msgid "Guia de Consignação"
+msgstr "Consignment Picking"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__is_gd
+msgid "Guia de Devolução"
+msgstr "Return Picking"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_import_saft__partes__guias
+msgid "Guias"
+msgstr "Pickings"
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.act_res_partner_2_stock_picking1
+msgid "Guias de Devolução"
+msgstr "Return Pickings"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__hash
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__hash
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__hash
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__hash
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__hash
+msgid "Hash"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__hide
+msgid "Hide"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.hist_saft_action
+#: model:ir.ui.menu,name:opc_certification_ao.hist_saft_tree_menu_opc
+msgid "Histórico"
+msgstr "History"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.hist_saft_form
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.hist_saft_tree
+msgid "Histórico SAFT-PT"
+msgstr "Saft History"
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_hist_saft
+msgid "Histórico de SAFT"
+msgstr "Saft History"
+
+#. module: opc_certification_ao
+#: model_terms:ir.actions.act_window,help:opc_certification_ao.hist_saft_action
+msgid "Histórico de exportações de Safts."
+msgstr "History of Safts exports."
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_pedidos_at_historico
+msgid "Histórico dos pedidos AT"
+msgstr "AT order history"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_account__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move_line__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move_reversal__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_tax__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_call_at_wiz__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_module_module__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_atcud__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_date_range__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_pedidos_at_historico__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_product_product__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_product_template__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_company__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_config_settings__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_partner__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_users__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order_line__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_move__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking_type__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo_linhas__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_tipo_empresa__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_tipo_produto_saft__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_utilizador_financas__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_alterar_guia__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_fatura__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_sale__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_manual_code__id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_recall_at__id
+msgid "ID"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_tax__saft_tax_type__iva
+msgid "IVA"
+msgstr "VAT"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__identificador_serie
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_atcud__identificador_serie
+msgid "Identificador da Série"
+msgstr "Series Identifier"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_tax__saft_tax_type__is
+msgid "Imp do Selo"
+msgstr "Seal Imp"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence__implementation
+msgid "Implementation"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_import_saft_pt
+msgid "Import SAFT-PT"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_import_saft_pt
+msgid "Importar"
+msgstr "Import"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_import_saft_pt
+msgid "Importar SAFT-PT"
+msgstr "Import Saft-T"
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_wizard_l10n_pt_import_saft
+msgid ""
+"Importar Saft AT - Menu: Contabilidade - Relatorios - Saft - Importar "
+"Ficheiro Saft"
+msgstr ""
+"Import Saft AT - Menu: Accounting - Reports - Saft - Import"
+"Saft File"
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.action_wizard_import_saft
+#: model:ir.ui.menu,name:opc_certification_ao.menu_wizard_import_saft
+msgid "Importar ficheiro SAFT"
+msgstr "Import Saft-T"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__hist_saft__tipo__import
+msgid "Importação"
+msgstr "Import"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_import_saft_pt
+msgid "Importação terminada\""
+msgstr "Import Done\""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#, python-format
+msgid ""
+"Impossibilidade\n"
+" Nao pode validar faturas com um total negativo!"
+msgstr ""
+"Impossibility \n"
+"You cannot validate invoices with a negative total!"
+
+#. module: opc_certification_ao
+#: model:account.tax.group,name:opc_certification_ao.tax_group_imposto
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_tax__saft_tax_type
+msgid "Imposto"
+msgstr "Tax"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__erros
+msgid "Incompatibilidades encontradas"
+msgstr "Incompatibilities found"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#, python-format
+msgid ""
+"Incompleto\n"
+"Introduza a razão do cancelamento no campo \"Descrição\" na aba \"Outras Informações\"."
+msgstr ""
+"Incomplete \n"
+"Enter the reason for the cancellation in the \" Description \ "field in the \" Other Information \ "tab."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#, python-format
+msgid ""
+"Incompleto\n"
+"Os campos \"Origem\" e \"Motivo de Anulação\" são de preenchimento obrigatório."
+msgstr ""
+"Incomplete \ n"
+"The fields \" Origin \ "and \" Reason for Cancellation \ "are mandatory."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/sale_order.py:0
+#, python-format
+msgid ""
+"Incompleto.\n"
+"Introduza a razão do cancelamento no campo \"Motivo do Cancelamento\"."
+msgstr ""
+"Incomplete. \ N"
+"Enter the reason for the cancellation in the \" Reason for Cancellation \ "field."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#, python-format
+msgid ""
+"Incorreto !\n"
+" A Fatura que está no doc. de origem da Nota de Crédito já foi cancelada."
+msgstr ""
+"Incorrect! \ N"
+"The Invoice that is in the original document of the Credit Note has already been canceled."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#, python-format
+msgid ""
+"Incorreto !\n"
+"A Fatura que está no doc. de origem da Nota de Crédito já foi cancelada."
+msgstr ""
+"Incorrect! \ N"
+"The Invoice that is in the original document of the Credit Note has already been canceled."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock__info
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft__info
+msgid "Informação"
+msgstr "Information"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo__start_date
+msgid "Inicio"
+msgstr "Start"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_at_code_manual
+msgid "Inserir"
+msgstr "Insert"
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.action_at_code_manual
+msgid "Inserir manualmente"
+msgstr "Insert manually"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "Inserir manualmente AT"
+msgstr "Enter AT manually"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_company__local_installation
+msgid "Instalação Local"
+msgstr "Local Instalation"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal__integrado
+msgid "Integrado"
+msgstr "Integrated"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_saft__tipo__i
+msgid "Integrado - Contabilidade e Facturação"
+msgstr "Integrated - Accounting and Billing"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_tax__saft_tax_code__int
+msgid "Intermédia"
+msgstr "Intermediate"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_product_product__default_code
+msgid "Internal Reference"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_product_product__barcode
+msgid "International Article Number used for product identification."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__internal_number
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__internal_number
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__internal_number
+msgid "Invoice Number"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "Invoice reason cancel must be defined on invoice numbered."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__inicio_numeracao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__inicio_numeracao_new
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_atcud__inicio_numeracao
+msgid "Início da Numeração"
+msgstr "Numbering Start"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_tax__saft_tax_code__ise
+msgid "Isenta"
+msgstr "Exempt"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_company__cash_vat_scheme_indicator
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_partner__cash_vat_scheme_indicator
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_users__cash_vat_scheme_indicator
+msgid "Iva de Caixa"
+msgstr "Cash VAT"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/res.py:0
+#, python-format
+msgid "Ja existe um cliente com esse NIF."
+msgstr "There is already a customer with this VAT."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/res.py:0
+#, python-format
+msgid "Ja existe um parceiro com esse NIF."
+msgstr "There is already a customer with this VAT."
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_account_journal
+msgid "Journal"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_account_move_line
+msgid "Journal Item"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_partner_form_cert_vat
+msgid "Já existe um parceiro com esse nif."
+msgstr "There is already a customer with this VAT."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "Já existem guias a usar essa sequencia, não pode alterar!"
+msgstr "There are already guides using this sequence, you cannot change it!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "Já existem guias de devolução a usar essa sequencia, não pode alterar!"
+msgstr "There are already return guides using this sequence, you cannot change it!"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_tax__description
+msgid "Label on Invoices"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_account____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move_reversal____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_tax____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_call_at_wiz____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_module_module____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_atcud____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_date_range____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_pedidos_at_historico____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_product_product____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_product_template____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_company____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_partner____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_users____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order_line____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_move____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking_type____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo_linhas____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_tipo_empresa____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_tipo_produto_saft____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_utilizador_financas____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_alterar_guia____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_fatura____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_sale____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_manual_code____last_update
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_recall_at____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_call_at_wiz__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_atcud__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_pedidos_at_historico__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo_linhas__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_tipo_empresa__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_tipo_produto_saft__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_utilizador_financas__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_alterar_guia__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_fatura__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_sale__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_manual_code__write_uid
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_recall_at__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_call_at_wiz__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_atcud__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_pedidos_at_historico__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo_linhas__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_tipo_empresa__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_tipo_produto_saft__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_utilizador_financas__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_alterar_guia__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_fatura__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_sale__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_manual_code__write_date
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_recall_at__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/res.py:0
+#, python-format
+msgid "Limite de validaçẽs do NIF alcançado."
+msgstr "VAT validation limit reached."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "Linha da ordem de vendanão tem produto: "
+msgstr "Sales order line has no product:"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_tax__country_region__pt-ma
+msgid "Madeira"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_at_code_manual
+msgid "Manul AT-CODE"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_utilizador_financas__por_defeito_matricula
+msgid "Matricula"
+msgstr "Plate"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_utilizador_financas__por_defeito_matricula
+msgid ""
+"Matricula a usar quando é para preencher por defeito a mesma, pode deixar em"
+" branco."
+msgstr ""
+"Enroll to use when it is to fill it by default, you can leave it at"
+" White."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__veiculo
+#: model:ir.model.fields,help:opc_certification_ao.field_wizard_alterar_guia__name
+msgid "Matrícula"
+msgstr "Plate"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__at_code_message
+msgid "Mensagem código AT"
+msgstr "AT code message"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_pedidos_at_historico__msg_erro
+msgid "Mensagem do erro"
+msgstr "Error message"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_utilizador_financas__por_defeito_minutos
+msgid "Minutos adicionais"
+msgstr "Additional minutes"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid ""
+"Missing configuration for exemption reason (must be at least 6 chars long)."
+msgstr ""
+"Missing configuration for exemption reason (must be at least 6 chars long)."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__modo_pagar_vd
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__modo_pagar_vd
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__modo_pagar_vd
+msgid "Modo Pagamento"
+msgstr "Payment Mode"
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_ir_module_module
+msgid "Module"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__moeda_show
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__moeda_show
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__moeda_show
+msgid "Moeda Show"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "Morada da Empresa"
+msgstr "Company Address"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "Morada do Cliente"
+msgstr "Customer's Address"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_tax__exemption_reason
+msgid "Motivo da isenção"
+msgstr "Reason for exemption"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__reason_cancel
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__reason_cancel
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__reason_cancel
+msgid "Motivo de Anulação"
+msgstr "Reason for Cancellation"
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.action_wizard_cancelar_fatura
+#: model:ir.actions.act_window,name:opc_certification_ao.action_wizard_cancelar_so
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__descricao_cancel
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_fatura__descricao_cancel
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_cancelar_sale__descricao_cancel
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_cancelar_fatura_form
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_cancelar_so_form
+msgid "Motivo do Cancelamento"
+msgstr "Reason for Cancellation"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_partner__reg_com
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_users__reg_com
+msgid "N.Registo"
+msgstr "Registration No."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__nif
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.res_partner_saft_inherit
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_res_partner_filter_opencloud
+msgid "NIF"
+msgstr "VAT"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_partner__nif_toc
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_users__nif_toc
+msgid "NIF do TOC"
+msgstr "TOC VAT"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_partner__nif_representante
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_users__nif_representante
+msgid "NIF do representante"
+msgstr "Representative VAT"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.res_partner_saft_inherit
+msgid "NIF: 99999990"
+msgstr "VAT: 999999990"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo_linhas__name
+msgid "Name"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/import_saft.py:0
+#, python-format
+msgid "Nao foi encontrado um diario "
+msgstr "No diary was found "
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/import_saft.py:0
+#, python-format
+msgid "Nao foi encontrado um imposto 23% de compras."
+msgstr "A 23% purchase tax was not found."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/import_saft.py:0
+#, python-format
+msgid "Nao foi encontrado um imposto 23% de vendas."
+msgstr "No 23% sales tax was found."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal__sequence_number_next
+msgid "Next Number"
+msgstr "Next Number"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_tax__exemption_reason
+msgid ""
+"No caso de IVA isento, indique qual a norma do codigo do IVA que autribui a "
+"isenção"
+msgstr ""
+"In the case of VAT exempt, please indicate which VAT code rule you assign to"
+"exemption"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_wizard_l10n_pt_import_saft__partes
+msgid ""
+"No caso de escolher importar incrementalmente os clientes e produtos tem de "
+"ser importados antes das faturas"
+msgstr ""
+"In case you choose to import customers and products incrementally you have to"
+"be imported before invoices"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__ir_sequence__implementation__no_gap
+msgid "No gap"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#, python-format
+msgid ""
+"No journal could be found in company %(company_name)s for any of those "
+"types: %(journal_types)s"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_tipo_produto_saft__name
+msgid "Nome"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__filename
+msgid "Nome do Ficheiro"
+msgstr "File Name"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_journal__transaction_type__n
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_tax__saft_tax_code__nor
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_exp_stock__tipo_stock__normal
+msgid "Normal"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__sale_order__type_doc__ne
+msgid "Nota de Encomenda"
+msgstr "Purchase Order"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_journal__saft_inv_type__nd
+msgid "Nota de débito"
+msgstr "Debit Note"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.invoice_tree_inherit
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.invoice_tree_inherit_search
+msgid "Number"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_partner__vat
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_users__vat
+msgid "Nº Contribuinte"
+msgstr "VAT Number"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__num_faturas
+msgid "Nº de Faturas"
+msgstr "Number of Invoices"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "Não existe um cliente com o nome \"Consumidor Final\" para a sua empresa"
+msgstr "There is no customer named \ "End Consumer \" for your company"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "Não existem taxonomias definidas para a empresa."
+msgstr "There are no defined taxonomies for the company."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#, python-format
+msgid "Não pode alterar a fatura para rascunho."
+msgstr "You cannot change the invoice to draft."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_payment.py:0
+#, python-format
+msgid "Não pode apagar um pagamento que já tenha sido validado!"
+msgstr "You cannot delete a payment that has already been validated!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_journal.py:0
+#, python-format
+msgid ""
+"Não pode definir o diário como integrado, pois este já entra em faturas ou "
+"recibos."
+msgstr ""
+"You cannot define the diary as integrated, as it is already on invoices or"
+"receipts."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_journal.py:0
+#, python-format
+msgid ""
+"Não pode definir o diário como manual, pois este já entra em faturas ou "
+"recibos."
+msgstr ""
+"You cannot set the diary as manual, as it is already on invoices or"
+"receipts."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_payment.py:0
+#, python-format
+msgid "Não pode eliminar pagamentos que não sejam rascunhos."
+msgstr "You cannot delete payments that are not drafts."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "Não pode haver uma guia com data inferior a uma guia validada!"
+msgstr "There cannot be a guide with a date less than a validated guide!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#, python-format
+msgid ""
+"Não pode publicar movimentos de vendas que nao estejam associados a faturas"
+msgstr ""
+"There cannot be a guide with a date less than a validated guide!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_tax.py:0
+#, python-format
+msgid ""
+"Não pode ter dois impostos na mesma empresa com o mesmo nome e tipo de uso."
+msgstr ""
+"You cannot have two taxes in the same company with the same name and type of use."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_tax.py:0
+#, python-format
+msgid ""
+"Não pode ter impostos isentos sem preencher o campo (Motivo da isenção) na "
+"aba (Dados SAFT)."
+msgstr ""
+"You cannot have exempt taxes without filling in the (Reason for exemption) field in"
+"tab (SAFT data)."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#, python-format
+msgid "Não pode validar para anos anteriores ao corrente."
+msgstr "You cannot validate for years prior to the current."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__hist_saft__state__nao_validado
+msgid "Não validado"
+msgstr "Not validated"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/res.py:0
+#, python-format
+msgid ""
+"Não é possivel utilizar a opção duplicar nas empresas, por favor use o botão"
+" criar."
+msgstr ""
+"It is not possible to use the duplicate option in companies, please use the button"
+" create."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_tax__saft_tax_code
+msgid "Nível de Taxa"
+msgstr "Rate Level"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_res_partner__vat
+#: model:ir.model.fields,help:opc_certification_ao.field_res_users__vat
+msgid "Número de Identicação Fiscal"
+msgstr "Tax Identification Number"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_res_company__reg_com
+#: model:ir.model.fields,help:opc_certification_ao.field_res_partner__reg_com
+#: model:ir.model.fields,help:opc_certification_ao.field_res_users__reg_com
+msgid "Número do registo comercial"
+msgstr "Commercial Registry Number"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#, python-format
+msgid "O Câmbio tem que ser maior que zero"
+msgstr "Exchange must be greater than zero"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/res.py:0
+#: code:addons/opc_certification_ao/models/res.py:0
+#, python-format
+msgid "O NIF é inválido!"
+msgstr "The VAT is invalid!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/alert_atcud.py:0
+#, python-format
+msgid ""
+"O campo Código de Validação de Série está por preencher. \n"
+"Deverá efectuar o pedido à AT deste código e preencher o mesmo antes de proceder. "
+msgstr ""
+"The Series Validation Code field is still to be filled out. \n"
+"You should apply to AT for this code and complete it before proceeding."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/cancelar_fatura.py:0
+#, python-format
+msgid "O campo motivo de cancelamento é obrigatório"
+msgstr "The cancellation reason field is mandatory"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/alert_atcud.py:0
+#, python-format
+msgid "O campo próximo número é obrigatório."
+msgstr "The next number field is mandatory."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/alert_atcud.py:0
+#, python-format
+msgid "O campo sequência está por preencher."
+msgstr "The sequence field is still to be filled."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/manual_code.py:0
+#, python-format
+msgid "O código tem de ser composto por pelo menos 9 dígitos."
+msgstr "The code must consist of at least 9 digits."
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_saft_pt
+msgid ""
+"O ficheiro vai exportar todos os movimentos existentes na base de dados para"
+" o exercicio escolhido."
+msgstr ""
+"The file will export all the existing movements in the database to"
+"the chosen exercise."
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_exp_stock
+msgid "O ficheiro vai exportar todos os produtos com stock positivo."
+msgstr "The file will export all products with positive stock."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/import_saft.py:0
+#, python-format
+msgid "O imposto "
+msgstr "The tax "
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/res.py:0
+#, python-format
+msgid "O nif não pode iniciar com 3 ou 4."
+msgstr "The nif cannot start with 3 or 4."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/res.py:0
+#, python-format
+msgid "O nif tem de possuir 9 digitos."
+msgstr "The nif must have 9 digits."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "O nome não está definido no parceiro com id %s."
+msgstr "The name is not defined on the partner with id %s."
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alert_atcud
+msgid ""
+"O número da série do documento que está a tentar validar não tem o Código de Validação fornecido pela AT preenchido.<br/>\n"
+"                           Deverá utilizar os seguintes dados para pedir o código AT para esta série:"
+msgstr ""
+"The serial number of the document you are trying to validate does not have the Validation Code provided by AT completed. <br/> \n"
+"You should use the following data to request the AT code for this series:"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "O pagamento "
+msgstr "The payment"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "O parceiro associado à empresa não tem NIF definido."
+msgstr "The partner associated with the company has no defined VAT."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/res.py:0
+#, python-format
+msgid "O parceiro entra em guias pelo que apenas o pode desactivar."
+msgstr "The partner enters guides so you can only disable it."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#, python-format
+msgid "O parceiro não possui nome!"
+msgstr "The partner has no name!"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/res.py:0
+#, python-format
+msgid "O parceiro tem de ser cliente porque possui faturas/notas de crédito."
+msgstr "The partner must be a customer because he has invoices / credit notes."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/sale_order.py:0
+#, python-format
+msgid "O preço unitario da ordem de venda "
+msgstr "The unit price of the sales order"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_import_saft_pt
+msgid ""
+"O programa vai importar todos os documentos contabilisticos do ficheiro saft para a\n"
+"                                base de dados."
+msgstr ""
+"The program will import all accounting documents from the saft file to \n"
+"                                data base."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia__deprecated
+msgid "Obsoleto"
+msgstr "Obsolete"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/hash_generation.py:0
+#, python-format
+msgid ""
+"Ocurreu um erro ao validar o documento, por favor entre em contacto com a "
+"Opencloud"
+msgstr ""
+"An error occurred while validating the document, please contact"
+"Opencloud"
+
+#. module: opc_certification_ao
+#: model_terms:ir.actions.act_window,help:opc_certification_ao.action_consignation_with_onboarding
+msgid ""
+"Once the cosignation is confirmed by the customer, you will be able to "
+"create an invoice and collect the payment."
+msgstr ""
+"Once the cosignation is confirmed by the customer, you will be able to "
+"create an invoice and collect the payment."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__sale_order__type_doc__or
+msgid "Orçamentos"
+msgstr "Quotes"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/alert_atcud.py:0
+#, python-format
+msgid "Os campos datas são obrigatórios."
+msgstr "The dates fields are mandatory."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_tax__saft_tax_code__out
+msgid "Outra"
+msgstr "Other"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alert_atcud
+msgid "Outros Dados"
+msgstr "Other data"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_journal__saft_inv_type__payment
+msgid "Pagamento"
+msgstr "Payment"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal__paga_me
+msgid "Pagamento Automático"
+msgstr "Automatic Payment"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_import_saft__partes__pagamentos
+msgid "Pagamentos"
+msgstr "Payments"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_company__pais_certificacao
+msgid "Pais Certificação"
+msgstr "Parents Certification"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/stock.py:0
+#, python-format
+msgid "Para validar a guia, o campo \"Procura Inicial\" tem de ser superior a 0."
+msgstr "To validate the tab, the \ "Initial Search \" field must be greater than 0."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__partes
+msgid "Partes"
+msgstr "Parties"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/res.py:0
+#, python-format
+msgid "Partner ref must be unique, per company!"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_partner__same_vat_partner_id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_users__same_vat_partner_id
+msgid "Partner with same Tax ID"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.account_journal_saft_inheritss
+msgid "Parâmetros SAFT"
+msgstr "SAFT Parameters"
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_account_payment
+msgid "Payments"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__carga_pais
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__descarga_pais
+msgid "País"
+msgstr "Country"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_pedidos_at_historico__pedido
+msgid "Pedido"
+msgstr "Order"
+
+#. module: opc_certification_ao
+#: model:ir.ui.menu,name:opc_certification_ao.pedidos_financas_menu
+msgid "Pedidos AT"
+msgstr "AT Orders"
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.pedidos_financas_action
+msgid "Pedidos Finanças"
+msgstr "Finance Orders"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo_linhas__periodo_id
+msgid "Periodo"
+msgstr "Period"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_utilizador_financas__name
+msgid "Permissão"
+msgstr "Permission"
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_stock_picking_type
+msgid "Picking Type"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_account_account_tree_hierarchy
+msgid "Plano de Contas"
+msgstr "Chart of Accounts"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid ""
+"Pode ainda pedir para preencher por defeito a matricula, a data de carga "
+"igual à data do pedido e que faça o pedido de GR ou GT de forma automática."
+msgstr ""
+"You can also ask to fill in the registration by default, the loading date"
+"same as the order date and order GR or GT automatically."
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_at_code_manual
+msgid ""
+"Pode obter o código no Portal das Finanças ou por telefone e adicioná-lo "
+"manualmente."
+msgstr ""
+"You can get the code from the Finance Portal or by phone and add it"
+"manually."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#: code:addons/opc_certification_ao/models/account_move.py:0
+#, python-format
+msgid "Por favor defina uma sequência no diário"
+msgstr "Please set a sequence in the diary"
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/import_saft.py:0
+#, python-format
+msgid ""
+"Precisa de configurar a conta de acertos de casa decimal para compra nas "
+"configurações da faturação."
+msgstr ""
+"You need to set up the decimal place account for purchase in"
+"billing settings."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/import_saft.py:0
+#, python-format
+msgid ""
+"Precisa de configurar a conta de acertos de casa decimal para venda nas "
+"configurações da faturação."
+msgstr ""
+"You need to set up the decimal settlement account for sale in"
+"billing settings."
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid ""
+"Preencha os campos N.Registo e Conservatória no contacto da empresa antes de"
+" exportar o Saft"
+msgstr ""
+"Fill in the N.Registo and Conservatória fields in the company contact before"
+"export Saft"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_utilizador_financas__por_defeito
+msgid "Preenchimento automático"
+msgstr "Automatic filling"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order_line__price_tax
+msgid "Price with Taxes"
+msgstr "Price with Taxes"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__sale_order__type_doc__pf
+msgid "Pro-Forma"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.hist_saft_search
+msgid "Procurar"
+msgstr "Search"
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_product_product
+msgid "Product"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "Product "
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_product_template
+msgid "Product Template"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/product_product.py:0
+#, python-format
+msgid "Product code must be unique, per company!"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__product_id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__product_id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__product_id
+msgid "Produto"
+msgstr "Product"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_import_saft__partes__produtos
+msgid "Produtos"
+msgstr "Products"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__old_name_proforma
+msgid "Proforma"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.action_proforma_with_onboarding
+#: model:ir.ui.menu,name:opc_certification_ao.menu_sale_proforma
+msgid "Proformas"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_company__validar_nif_duplicados
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_partner__nif_duplicado
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_users__nif_duplicado
+msgid "Proibir NIF's Duplicados"
+msgstr "Prohibit Duplicate VATs"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_exp_stock
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_import_saft_pt
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_saft_pt
+msgid "Pronto"
+msgstr "Ready"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__qr_code_at_img
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__qr_code_at_img
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__qr_code_at_img
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__qr_code_at_img
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__qr_code_at_img
+msgid "QR Code"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__qr_code_at
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__qr_code_at
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__qr_code_at
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__qr_code_at
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__qr_code_at
+msgid "QR Code AT"
+msgstr "QR Code AT"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__old_name_quotation
+msgid "Quotation"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__old_name
+msgid "Quotation draft"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_journal__saft_inv_type__receipt
+msgid "Recibo"
+msgstr "Receipt"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_tax__saft_tax_code__red
+msgid "Reduzida"
+msgstr "Reduced"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_recall_at
+msgid "Reenviar"
+msgstr "Resend"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid "Reenviar pedido AT"
+msgstr "Resend AT request"
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_recall_at
+msgid "Reenviar pedidos"
+msgstr "Resend orders"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__ref_pagamento
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__ref_pagamento
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__ref_pagamento
+msgid "Referência do Pagamento"
+msgstr "Payment Reference"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__old_name
+msgid "Referência interna"
+msgstr "Internal reference"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_company__reg_com
+msgid "Reg. comercial"
+msgstr "Business record"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_journal__transaction_type__r
+msgid "Regularizações"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_call_at_wiz__resultado
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__name
+msgid "Resultado"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:account.tax.group,name:opc_certification_ao.tax_group_retencao
+msgid "Retenção"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/alterar_guia.py:0
+#, python-format
+msgid "Returned Picking"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__rollback
+msgid "Rollback"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__carga_rua
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__descarga_rua
+msgid "Rua"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.ui.menu,name:opc_certification_ao.menu_wizard_saft_pai
+msgid "Saft"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_sale_order
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.sale_order_view_search_old_names_new
+msgid "Sales Order"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_sale_order_line
+msgid "Sales Order Line"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_res_partner__tipo_cambio
+#: model:ir.model.fields,help:opc_certification_ao.field_res_users__tipo_cambio
+msgid ""
+"Se for fixo as diferenças cambiais são lançadas na conta do cliente, se for "
+"variável as diferenças são lançadas na conta 7861 ou 692."
+msgstr ""
+"If fixed, exchange differences are posted to the customer's account, if"
+"variable differences are posted to account 7861 or 692."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_res_partner__nif_duplicado
+#: model:ir.model.fields,help:opc_certification_ao.field_res_users__nif_duplicado
+msgid "Se levar visto, existe um outro parceiro com esse nif."
+msgstr "If you get a visa, there is another partner with that number."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_res_company__validar_nif
+msgid ""
+"Se levar visto, o programa valida o nif dos parceiros sempre que os cria ou "
+"edita."
+msgstr ""
+"If you get a visa, the program validates the partners' nif whenever you create them or"
+"edit."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_res_company__validar_nif_duplicados
+msgid "Se levar visto, o programa valida o nif tem de ser unico por parceiro."
+msgstr "If you get a visa, the program validates the nif and must be unique per partner."
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_wizard_l10n_pt_import_saft__rollback
+msgid "Se não tiver visto vai fazendo commit à medida que vai importando."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_picking_form_at_fields
+msgid ""
+"Se o erro for 'Erro desconhecido' é sinal que o servidor das finanças não respondeu em\n"
+"                                tempo útil."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_journal__paga_me
+msgid ""
+"Selecionar isto se quer que as faturas no Diário de VDs seja automaticamente"
+" pago"
+msgstr ""Select this if you want invoices in the RV Journal to be automatically"
+" paid out""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_utilizador_financas__passe
+msgid "Senha"
+msgstr "Password"
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_ir_sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_ir_sequence_date_range
+msgid "Sequence Date Range"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__sequence_generated
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__sequence_generated
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__sequence_generated
+msgid "Sequence Generated"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking_type__sequence_id_gd_validate
+msgid "Sequencia GD Validada"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking_type__sequence_id_validate
+msgid "Sequencia Validada"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__sequence_id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_atcud__sequence_id
+msgid "Sequência"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_account_journal_form_seq
+msgid "Sequência Faturas"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_account_journal_form_seq
+msgid "Sequência Notas de Crédito"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_account_journal_form_seq
+msgid "Sequências"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/hash_generation.py:0
+#: code:addons/opc_certification_ao/models/ir_module_module.py:0
+#, python-format
+msgid "Servidor sem acesso à Internet"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__show_error
+msgid "Show Error"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__ir_sequence__implementation__standard
+msgid "Standard"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_stock_move
+msgid "Stock Move"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_at_code_manual
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alterar_guia
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.hist_saft_form
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.hist_saft_tree
+msgid "Submeter"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__hist_saft__state__submetido
+msgid "Submetido"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order_line__price_subtotal
+msgid "Subtotal"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__stock_picking__at_status__success
+msgid "Success"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.action_ir_sequence_atcud
+msgid "Séries ATCUD"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_taxonomia_periodo
+msgid "Tabela de relacao entre taxonomias e os periodos e empresas"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_taxonomia
+msgid "Tabela de taxonomias"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_taxonomia_tipo_empresa
+msgid ""
+"Tabela taxonomias - relacao entre impostos e contas financeiras\n"
+"                      Menu Contabilidade - Configuraçao - Taxonomias"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_account_tax
+msgid "Tax"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__amount_by_group
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__amount_by_group
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__amount_by_group
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__amount_by_group
+msgid "Tax amount by group"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "Tax exemption code in lack on tax define it in order to proceed"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "Tax exemption reason in lack on tax define it in order to proceed"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "Tax exemption reason in lack on tax named ."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_account__taxonomia_id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia__name
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.taxonomia_form_view
+msgid "Taxonomia"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.action_taxonomia_periodo
+#: model:ir.model.fields,field_description:opc_certification_ao.field_taxonomia_periodo__taxonomias
+#: model:ir.ui.menu,name:opc_certification_ao.menu_action_taxonomia_periodo
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.taxonomia_periodo_form_view
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.taxonomia_periodo_tree_view
+msgid "Taxonomias"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_utilizador_financas__por_defeito_minutos
+msgid ""
+"Tempo em minutos a adicionar à hora em que a guia é validada para o campo "
+"hora de carga."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_journal__refund_sequence_number_next
+msgid "The next sequence number will be used for the next credit note."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_journal__sequence_number_next
+msgid "The next sequence number will be used for the next invoice."
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "There is an error in GroupingCategory in account number: "
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/wizard_l10n_pt_saft.py:0
+#, python-format
+msgid "There is an error in tax exemption on payment "
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/sale_order.py:0
+#, python-format
+msgid ""
+"There must be at least a product in order lines in order to certify the "
+"document."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_journal__refund_sequence_id
+msgid ""
+"This field contains the information related to the numbering of the credit "
+"note entries of this journal."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_journal__sequence_id
+msgid ""
+"This field contains the information related to the numbering of the journal "
+"entries of this journal."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__tipo
+msgid "Tipo"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.view_partner_form_state_id_inherit
+msgid "Tipo Cambio"
+msgstr "Type of Exchange Rate"
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.action_tipo_produto_saft
+#: model:ir.model.fields,field_description:opc_certification_ao.field_product_product__tipo_produto_id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_product_template__tipo_produto_id
+#: model:ir.ui.menu,name:opc_certification_ao.menu_action_tipo_produto_saft
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.tipo_produto_saft_form_view
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.tipo_produto_saft_tree_view
+msgid "Tipo Produto Saft"
+msgstr "Saft Product Type"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_partner__tipo_cambio
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_users__tipo_cambio
+msgid "Tipo de Cambio"
+msgstr "Type of Exchange Rate"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_bank_statement_line__ref_saft_inv_type
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal__saft_inv_type
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_move__ref_saft_inv_type
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_payment__ref_saft_inv_type
+#: model:ir.model.fields,field_description:opc_certification_ao.field_alert_atcud__tipo_documento
+#: model:ir.model.fields,field_description:opc_certification_ao.field_ir_sequence_atcud__tipo_documento
+msgid "Tipo de Documento"
+msgstr "Type of Document"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal__transaction_type
+msgid "Tipo de Lançamento"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock__tipo_prod
+msgid "Tipo de Produto"
+msgstr "Type of Product"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock__tipo_produto_saft_ids
+msgid "Tipo de Produto Saft"
+msgstr "Type of Saft Product"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_exp_stock__tipo_stock
+msgid "Tipo de Stock"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__tipo
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft__tipo
+msgid "Tipo ficheiro"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_tipo_produto_saft
+msgid ""
+"Tipos de produtos de acordo com as opçoes no ficheiro exportavel de stock "
+"para a AT"
+msgstr ""
+"Types of products according to the options in the exportable stock file"
+"for AT"
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_exp_stock__tipo_prod__todos
+msgid "Todos"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_import_saft__partes__tudo
+msgid "Tudo"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_ir_sequence__implementation
+msgid ""
+"Two sequence object implementations are offered: Standard and 'No gap'. The "
+"later is slower than the former but forbids any gap in the sequence (while "
+"they are possible in the former)."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_sale_order__type_doc
+msgid "Type Doc"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_stock_picking__hash
+msgid "Unique hash of the deliver order."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_bank_statement_line__hash
+#: model:ir.model.fields,help:opc_certification_ao.field_account_move__hash
+msgid "Unique hash of the invoice."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_payment__hash
+#: model:ir.model.fields,help:opc_certification_ao.field_sale_order__hash
+msgid "Unique hash of the sale order."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__usar_dados_client
+msgid "Usar dados cliente"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_stock_picking__usar_dados_empresa
+msgid "Usar dados empresa"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/wizard/import_saft.py:0
+#: code:addons/opc_certification_ao/wizard/import_saft.py:0
+#: code:addons/opc_certification_ao/wizard/import_saft.py:0
+#, python-format
+msgid "UserError"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_res_users
+msgid "Users"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__user
+#: model:ir.model.fields,field_description:opc_certification_ao.field_pedidos_at_historico__user_id
+#: model:ir.model.fields,field_description:opc_certification_ao.field_utilizador_financas__user
+msgid "Utilizador"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_utilizador_financas
+msgid "Utilizador das finanças"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.actions.act_window,name:opc_certification_ao.utilizador_financas_action
+#: model:ir.ui.menu,name:opc_certification_ao.utilizador_financas_menu
+msgid "Utilizadores Finanças"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__hist_saft__state__validado
+msgid "Validado"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.hist_saft_form
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.hist_saft_tree
+msgid "Validar"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_res_company__validar_nif
+msgid "Validar NIF"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.res_partner_saft_inherit
+msgid "Validate NIF"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__stock_picking__at_status__validated
+msgid "Validated"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__valor_credito
+msgid "Valor a Crédito"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_hist_saft__valor_debito
+msgid "Valor a Débito"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_account_bank_statement_line__currency_tax_info
+#: model:ir.model.fields,help:opc_certification_ao.field_account_move__currency_tax_info
+#: model:ir.model.fields,help:opc_certification_ao.field_account_payment__currency_tax_info
+msgid "Valor e data da taxa de cambio definida para a date e moeda da fatura"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_exp_stock__tipo_stock__valorizado
+msgid "Valorizado"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__res_partner__tipo_cambio__variavel
+msgid "Variável"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__account_journal__saft_inv_type__vd
+msgid "Venda a Dinheiro"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.form_wizard_alert_atcud
+msgid "Ver todas as séries ATCUD"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_account_journal__allow_date
+msgid "Verificar Periodo"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_import_saft__versao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_l10n_pt_saft__versao
+msgid "Versão"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,field_description:opc_certification_ao.field_wizard_alterar_guia__name
+msgid "Veículo: "
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.hist_saft_form
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.hist_saft_tree
+msgid "Voltar a Não Validado"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_alert_atcud
+msgid "Wizard de adicao de atcud"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_wizard_cancelar_sale
+msgid "Wizard de cancelamento da SO"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_wizard_cancelar_fatura
+msgid "Wizard de cancelamento da fatura"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_wizard_l10n_pt_saft
+msgid ""
+"Wizard exportador ficheiro Saft-T. Menu: Contabilidade - Relatorios - Saft -"
+" Exportar Ficheiro Saft"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_wizard_alterar_guia
+msgid ""
+"Wizard para alterar campos na guia depois de validada e cujo estado AT seja "
+"cancelado"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_wizard_manual_code
+msgid "Wizard para definir novo codigo AT manualmente na guia"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_call_at_wiz
+msgid "Wizard para pedir codigos AT para uma ou varias guias na vista de tree"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_wizard_recall_at
+msgid "Wizard para pedir novos codigos AT nas guias"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/sale_order.py:0
+#, python-format
+msgid "You can not change the state of a certified document to draft!"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/sale_order.py:0
+#, python-format
+msgid "You cannot certify a document with no product. Insert a product."
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_exp_stock__state__choose
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_import_saft__state__choose
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_saft__state__choose
+msgid "choose"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_journal.py:0
+#, python-format
+msgid "code"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/product_product.py:0
+#, python-format
+msgid "default_code"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_manual_code__at_status__done
+msgid "done"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_exp_stock__state__get
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_import_saft__state__get
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_l10n_pt_saft__state__get
+msgid "get"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields.selection,name:opc_certification_ao.selection__wizard_manual_code__at_status__insert
+msgid "insert"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_ir_sequence_atcud
+msgid "ir.sequence.atcud"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/account_journal.py:0
+#, python-format
+msgid "name"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_cancelar_fatura_form
+#: model_terms:ir.ui.view,arch_db:opc_certification_ao.wizard_cancelar_so_form
+msgid "ou"
+msgstr ""
+
+#. module: opc_certification_ao
+#: code:addons/opc_certification_ao/models/ir_sequence.py:0
+#: code:addons/opc_certification_ao/models/ir_sequence.py:0
+#: code:addons/opc_certification_ao/models/ir_sequence.py:0
+#: code:addons/opc_certification_ao/models/ir_sequence.py:0
+#, python-format
+msgid "prefix"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model,name:opc_certification_ao.model_taxonomia_periodo_linhas
+msgid "tabela de linhas de relacao entre taxonomias e periodos"
+msgstr ""
+
+#. module: opc_certification_ao
+#: model:ir.model.fields,help:opc_certification_ao.field_sale_order__amount_by_group
+msgid "type: [(name, amount, base, formated amount, formated base)]"
+msgstr ""

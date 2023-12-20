@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <menuitem name="Finanças"
+                  id="financas_menu"
+                  parent="base.menu_custom"
+                  sequence="10"/>
+
+        <menuitem name="Pedidos AT"
+                  action="pedidos_financas_action"
+                  id="pedidos_financas_menu"
+                  parent="financas_menu"
+                  sequence="11"/>
+
+        <menuitem name="Utilizadores Finanças"
+                  action="utilizador_financas_action"
+                  id="utilizador_financas_menu"
+                  parent="financas_menu"
+                  sequence="10"/>
+
+        <menuitem id="menu_wizard_saft_pai"
+                  name="Saft"
+                  parent="account.menu_finance_reports"/>
+
+        <menuitem
+                id="hist_saft_tree_menu_opc"
+                action="hist_saft_action"
+                parent="menu_wizard_saft_pai"
+                sequence="3"/>
+
+        <menuitem action="action_wizard_import_saft"
+                  id="menu_wizard_import_saft"
+                  parent="opc_certification_ao.menu_wizard_saft_pai"
+                  sequence="2"/>
+
+        <menuitem action="action_wizard_saft"
+                  id="menu_wizard_saft"
+                  parent="opc_certification_ao.menu_wizard_saft_pai"
+                  sequence="1"/>
+
+
+</odoo>
