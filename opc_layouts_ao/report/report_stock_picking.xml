@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <template id="report_delivery_oc">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-set="lang" t-value="o.partner_id.lang"/>
+                    <t t-set="n_copies" t-value="int(o.company_id.n_copies_picking)"/>
+                    <t t-foreach="range(n_copies)" t-as="n_pages">
+                        <t t-set="page_n" t-value="n_pages+1"/>
+                        <t t-call="stock.report_picking" t-lang="lang"/>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <record id="stock.action_report_delivery" model="ir.actions.report">
+            <field name="report_name">opc_layouts_ao.report_delivery_oc</field>
+        </record>
+
+        <record id="stock.action_report_picking" model="ir.actions.report">
+            <field name="report_name">opc_layouts_ao.report_delivery_oc</field>
+        </record>
+
+         <template id="report_picking_opc" inherit_id="stock.report_picking">
+            <xpath expr="//div[@name='div_sched_date']" position="before">
+                <div class="col-auto" t-if="o.partner_id" name="vat">
+                    <strong>V/Nº. Contribuinte</strong>
+                    <p t-if="o.partner_id.commercial_partner_id.vat!='999999990'">
+                        <span t-field="o.partner_id.commercial_partner_id.vat"/>
+                    </p>
+                    <p t-if="o.partner_id.commercial_partner_id.vat=='999999990'">Consumidor Final</p>
+                </div>
+            </xpath>
+             <xpath expr="//t/t/t/div[@class='page']/h1" position="replace">
+                <h2>
+                    <span t-if="o.state== 'done' and o.picking_type_id.code=='outgoing' and o.is_gc==True">
+                        Guia de Consignação
+                    </span>
+                    <span t-if="o.state== 'done' and o.picking_type_id.code=='outgoing' and o.is_gc!=True">
+                        Guia de Remessa
+                    </span>
+                    <span t-if="o.state== 'done' and o.picking_type_id.code!='outgoing' and o.is_gd!=True">
+                        Guia de Trânsito
+                    </span>
+                    <span t-if="o.state== 'done' and o.picking_type_id.code=='incoming' and o.is_gd==True">
+                        Guia de Devolução
+                    </span>
+                    <span t-if="o.state != 'done'">Rascunho</span>
+                    nº
+                    <span t-field="o.name"/>
+                    <t t-if="page_n==1">
+                        <span style="float:right;font-size:11px;margin-top:9px">Original</span>
+                    </t>
+                    <t t-if="page_n==2">
+                        <span style="float:right;font-size:11px;margin-top:9px">Duplicado</span>
+                    </t>
+                    <t t-if="page_n==3">
+                        <span style="float:right;font-size:11px;margin-top:9px">Triplicado</span>
+                    </t>
+                    <t t-if="page_n==4">
+                        <span style="float:right;font-size:11px;margin-top:9px">Quadruplicado</span>
+                    </t>
+                    <t t-if="page_n==5">
+                        <span style="float:right;font-size:11px;margin-top:9px">Quintuplicado</span>
+                    </t>
+                    <t t-if="page_n==6">
+                        <span style="float:right;font-size:11px;margin-top:9px">Sextuplicado</span>
+                    </t>
+                    <t t-if="page_n==7">
+                        <span style="float:right;font-size:11px;margin-top:9px">Septuplicado</span>
+                    </t>
+                    <t t-if="page_n==8">
+                        <span style="float:right;font-size:11px;margin-top:9px">Octuplicado</span>
+                    </t>
+                    <t t-if="page_n==9">
+                        <span style="float:right;font-size:11px;margin-top:9px">Nonuplicado</span>
+                    </t>
+                    <t t-if="page_n==10">
+                        <span style="float:right;font-size:11px;margin-top:9px">Decuplicado</span>
+                    </t>
+                </h2>
+            </xpath>
+             <xpath expr="//t/t/t/div[@class='page']" position="inside">
+                <div class="row">
+                    <div class="col-6">
+                        <t t-if="o.picking_type_id.code == 'internal'">
+                            <div style="text-align: justify;">
+                                <p>
+                                    <b>Data Carga:</b>
+                                    <span t-if="o.data_carga!= False ">
+                                        <span t-field="o.data_carga" t-field-options="{&quot;format&quot;: &quot;yyyy/dd/MM HH:mm&quot;}"/>h
+                                    </span>
+                                    <span t-if="o.usar_dados_empresa == True">
+                                        <br/>
+                                        <b>Local de Carga:</b>
+                                        <t t-set="verificar_group_locations" t-value="0"/>
+                                        <t t-if="o.location_dest_id.name"
+                                           groups="stock.group_locations">
+                                            <t t-set="verificar_group_locations" t-value="1"/>
+                                            <t t-if="o.location_id.usage == 'internal'">
+                                                <span t-esc="o.picking_type_id.warehouse_id.name"/>
+                                                 -
+                                                <span t-esc="o.location_id.name"/>
+                                            </t>
+                                            <t t-if="o.picking_type_id.code=='incoming'">
+                                                V/ Armazém
+                                            </t>
+                                            <t t-if="not o.picking_type_id.code=='incoming' and not o.location_id.usage == 'internal'">
+                                                N/ Armazém
+                                            </t>
+                                        </t>
+                                        <t t-if="o.picking_type_id.code=='incoming' and verificar_group_locations == 0">
+                                            V/ Armazém
+                                        </t>
+                                        <t t-if="not o.picking_type_id.code=='incoming' and verificar_group_locations == 0">
+                                            N/ Armazém
+                                        </t>
+                                    </span>
+                                    <span t-if="o.usar_dados_empresa != True">
+                                        <br/>
+                                        <b>Local Carga:</b>
+                                        <span t-field="o.carga_rua"/>
+                                        <br/>
+                                        <span t-field="o.carga_cp"/>
+                                        <span t-field="o.carga_cidade"/>
+                                        <br/>
+                                        <span t-field="o.carga_pais and o.carga_pais.name"/>
+                                    </span>
+                                    <span t-if="o.usar_dados_client == True">
+                                        <br/>
+                                        <b>Local de Descarga:</b>
+                                        <t t-set="verificar_group_locations" t-value="0"/>
+                                        <t t-if="o.location_dest_id.name" groups="stock.group_locations">
+                                            <t t-set="verificar_group_locations" t-value="1"/>
+                                            <t t-if="o.location_dest_id.usage == 'internal'">
+                                                <span t-esc="o.picking_type_id.warehouse_id.name"/>
+                                                 -
+                                                <span t-esc="o.location_dest_id.name"/>
+                                            </t>
+                                            <t t-if="not o.location_dest_id.usage == 'internal'">
+                                                V/ Armazém
+                                            </t>
+                                        </t>
+                                        <t t-if="o.picking_type_id.code=='incoming' and verificar_group_locations == 0">
+                                            N/ Armazém
+                                        </t>
+                                        <t t-if="not o.picking_type_id.code=='incoming' and verificar_group_locations == 0">
+                                            V/ Armazém
+                                        </t>
+                                    </span>
+                                    <br/>
+                                    <b>Veículo:</b>
+                                    <span t-esc="o.veiculo"/>
+                                </p>
+                            </div>
+                        </t>
+
+                    </div>
+                    <t t-if="o.picking_type_id.code == 'internal'">
+                        <div class="col-6">
+                            <div style="text-align: justify;" t-if="o.usar_dados_client == False">
+                                <p>
+                                    <b>Data Descarga:</b>
+                                    <span t-if="o.data_descarga!= False and o.usar_dados_client == False">
+                                        <span t-field="o.data_descarga"
+                                              t-field-options="{&quot;format&quot;: &quot;yyyy/dd/MM HH:mm&quot;}"/>
+                                        h
+                                    </span>
+                                    <br/>
+                                    <b>Local Descarga:</b>
+                                    <span t-field="o.descarga_rua"/>
+                                    <br/>
+                                    <span t-field="o.descarga_cp"/>
+                                    <span t-field="o.descarga_cidade"/>
+                                    <br/>
+                                    <span t-field="o.descarga_pais and o.descarga_pais.name"/>
+                                    <span t-if="o.usar_dados_empresa == False">
+                                        <br/>
+                                    </span>
+                                    <br/>
+                                </p>
+                            </div>
+                         </div>
+                    </t>
+
+                </div>
+                 <div class="row">
+                    <div class="col-12">
+                        <div style="text-align: justify;">
+                            <t t-if="o.hash!=False and o.state=='done'">
+                                <p>
+                                    <span t-esc="o.hash[0:1]"/><span t-esc="o.hash[10:11]"/><span t-esc="o.hash[20:21]"/><span t-esc="o.hash[30:31]"/>
+                                    - Processado por programa validado nº 380/AGT/2022.
+                                </p>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+                 <br/>
+                 <div class="row">
+                    <div class="col-6">
+                        <p>Entreguei: _____________________________</p>
+                    </div>
+                    <div class="col-6">
+                        <p>Recebi: _____________________________</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt16">
+                        <div style="text-align: justify;">
+                            <t t-if="o.state!='done'">
+                                <p>Este Documento não serve como Fatura.</p>
+                            </t>
+                            <t t-if="o.manual==True and o.origin!=False">
+                                <p>Cópia do Documento Original-<span t-field="o.company_id.name"/>.
+                                </p>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+
+            </xpath>
+        </template>
+
+</odoo>

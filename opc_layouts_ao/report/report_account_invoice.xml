@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <template id="report_invoice_document_itc" inherit_id="account.report_invoice_document">
+            <xpath expr="//t/div[@class='page']/h2" position="replace">
+                <div class="row mt16">
+                    <div t-if="o.move_type=='in_invoice' and o.state!='cancel'">
+                        <h2 style="text-transform:uppercase">Factura de Compra</h2>
+                    </div>
+                    <div t-if="o.move_type=='in_refund' and o.state!='cancel'">
+                        <h2 style="text-transform:uppercase">Nota de Crédito de Fornecedor</h2>
+                    </div>
+                    <div t-if="o.move_type=='in_invoice' and o.state=='cancel'">
+                        <h2 style="text-transform:uppercase">Factura de Compra Cancelada</h2>
+                    </div>
+                    <div t-if="o.move_type=='in_refund' and o.state=='cancel'">
+                        <h2 style="text-transform:uppercase">Nota de Crédito de Fornecedor Cancelada</h2>
+                    </div>
+                    <div t-if="o.partner_id.id" class="col-12">
+                        <h3 style="margin-bottom:0px;font-size:22px">
+                            <t t-if="page_n==1">
+                                <span style="float:right;font-size:11px;margin-top:9px">Original
+                                    <span t-if="o.isprinted==True">&#160;(2ª Via)</span>
+                                </span>
+                            </t>
+                            <t t-if="page_n==2">
+                                <span style="float:right;font-size:11px;margin-top:9px">Duplicado
+                                    <span t-if="o.isprinted==True">&#160;(2ª Via)</span>
+                                </span>
+                            </t>
+                            <t t-if="page_n==3">
+
+                                <span style="float:right;font-size:11px;margin-top:9px">Triplicado
+                                    <span t-if="o.isprinted==True">&#160;(2ª Via)</span>
+                                </span>
+                                <div style="display:none">
+                                 <span t-esc="get_is_printed(o)"/>
+                                </div>
+                            </t>
+                            <t t-if="page_n==4">
+                                <span t-esc="get_is_printed(o)"/>
+                                <span style="float:right;font-size:11px;margin-top:9px">Quadruplicado
+                                    <span t-if="o.isprinted==True">&#160;(2ª Via)</span>
+                                </span>
+                            </t>
+                            <t t-if="page_n==5">
+                                <span t-esc="get_is_printed(o)"/>
+                                <span style="float:right;font-size:11px;margin-top:9px">Quintuplicado
+                                    <span t-if="o.isprinted==True">&#160;(2ª Via)</span>
+                                </span>
+                            </t>
+                            <t t-if="page_n==6">
+                                <span t-esc="get_is_printed(o)"/>
+                                <span style="float:right;font-size:11px;margin-top:9px">Sextuplicado
+                                    <span t-if="o.isprinted==True">&#160;(2ª Via)</span>
+                                </span>
+                            </t>
+                            <t t-if="page_n==7">
+                                <span t-esc="get_is_printed(o)"/>
+                                <span style="float:right;font-size:11px;margin-top:9px">Septuplicado
+                                    <span t-if="o.isprinted==True">&#160;(2ª Via)</span>
+                                </span>
+                            </t>
+                            <t t-if="page_n==8">
+                                <span t-esc="get_is_printed(o)"/>
+                                <span style="float:right;font-size:11px;margin-top:9px">Octuplicado
+                                    <span t-if="o.isprinted==True">&#160;(2ª Via)</span>
+                                </span>
+                            </t>
+                            <t t-if="page_n==9">
+                                <span t-esc="get_is_printed(o)"/>
+                                <span style="float:right;font-size:11px;margin-top:9px">Nonuplicado
+                                    <span t-if="o.isprinted==True">&#160;(2ª Via)</span>
+                                </span>
+                            </t>
+                            <t t-if="page_n==10">
+                                <span t-esc="get_is_printed(o)"/>
+                                <span style="float:right;font-size:11px;margin-top:9px">Decuplicado
+                                    <span t-if="o.isprinted==True">&#160;(2ª Via)</span>
+                                </span>
+                            </t>
+                            <h2>
+                                <span t-if="o.move_type == 'out_invoice' and (( o.journal_id.saft_inv_type!='VD' ) and o.journal_id.saft_inv_type!='ND' and o.journal_id.saft_inv_type!='FR' ) and o.state == 'posted' ">
+                                    Factura
+                                </span>
+                                <span t-if="o.state == 'draft'">
+                                    Nota Informativa
+                                </span>
+                                <span t-if="o.move_type == 'out_invoice' and o.state == 'cancel'">Factura Anulada</span>
+                                <span t-if="o.move_type=='out_refund' and o.state == 'posted'">
+                                    Nota de Crédito
+                                </span>
+                                <span t-if="o.move_type=='in_refund' and o.state == 'posted'">
+                                    Nota de Crédito
+                                </span>
+                                <span t-if="o.move_type=='in_invoice' and o.state == 'posted'">
+                                    Factura
+                                </span>
+                                <span t-if="o.move_type=='in_invoice' and o.state == 'cancel'">Factura Anulada</span>
+                                <span t-if="o.move_type == 'out_invoice' and (( o.journal_id.saft_inv_type=='VD' ) and o.state == 'posted')">
+                                    Factura
+                                </span>
+                                <span t-if="o.move_type == 'out_invoice' and (( o.journal_id.saft_inv_type=='ND' ) and o.state == 'posted')">
+                                    Nota de Débito
+                                </span>
+                                <span t-if="o.move_type == 'out_refund' and o.state == 'cancel'">Nota de Crédito Anulada
+                                </span>
+                                <span t-if="o.move_type == 'in_refund' and o.state == 'cancel'">Nota de Crédito Anulada
+                                </span>
+                                <span t-if="o.move_type == 'out_invoice' and o.journal_id.saft_inv_type=='FR' and o.state == 'posted'">
+                                    Factura/Recibo
+                                </span>
+                                <span t-if="o.name and o.state!='draft'">
+                                    nº
+                                    <span t-if="o.move_type == 'out_invoice'">
+                                        <span t-if="o.journal_id.saft_inv_type=='FT'">FT</span>
+                                        <span t-if="o.journal_id.saft_inv_type=='FR'">FR</span>
+                                        <span t-if="o.journal_id.saft_inv_type=='ND'">ND</span>
+                                        <span t-if="o.journal_id.saft_inv_type=='VD'">VD</span>
+                                        <span t-if="o.journal_id.saft_inv_type=='AA'">AA</span>
+                                        <span t-if="o.journal_id.saft_inv_type=='DA'">DA</span>
+                                        <span t-if="o.journal_id.saft_inv_type=='FS'">FS</span>
+                                    </span>
+                                    <span t-if="o.move_type == 'out_refund'">NC</span>
+                                    <span t-field="o.name"/>
+                                </span>
+                            </h2>
+                            <p><br/></p>
+                        </h3>
+                    </div>
+                </div>
+            </xpath>
+
+            <xpath expr="//t/div[@class='page']/div[@id='informations']/div[2]" position="after">
+              <div class="col-auto mw-100 mb-2" t-if="o.partner_id" name="vat">
+                  <strong>Contribuinte:</strong>
+                  <p t-if="o.partner_id.commercial_partner_id.vat!='999999999'">
+                      <span t-field="o.partner_id.commercial_partner_id.vat"/>
+                  </p>
+                  <p t-if="o.partner_id.commercial_partner_id.vat=='999999999'">Consumidor Final</p>
+              </div>
+            </xpath>
+            <xpath expr="//p[@name='payment_term']" position="replace">
+            </xpath>
+            <xpath expr="//div[@name='invoice_date']" position="replace">
+                <div class="col-auto mw-100 mb-2" t-if="o.date and o.move_type != 'out_refund'" name="invoice_date">
+                    <strong>Data de Emissão</strong>
+                    <p class="m-0" t-field="o.date"/>
+                </div>
+                <div class="col-auto mw-100 mb-2" t-if="o.date and o.move_type == 'out_refund'" name="invoice_date">
+                    <strong>Refund Date:</strong>
+                    <p class="m-0" t-field="o.date"/>
+                </div>
+            </xpath>
+            <xpath expr="//div[@name='origin']" position="replace">
+                <div class="col-auto mw-100 mb-2" t-if="o.invoice_origin" name="origin">
+                    <strong>Documento de Origem</strong>
+                    <p class="m-0" t-field="o.invoice_origin"/>
+                </div>
+            </xpath>
+            <xpath expr="//t/div[@class='page']/div/div[@name='reference']" position="after">
+                <div name="payment_term" class="col-auto"
+                     t-if="o.invoice_payment_term_id and o.state in ('open', 'in_payment', 'paid')">
+                    <strong>Termo de Pagamento:</strong>
+                    <p t-field="o.invoice_payment_term_id"/>
+                </div>
+                <div name="incoterms" class="col-auto"
+                     t-if="o.invoice_incoterm_id">
+                    <strong>Incoterm:</strong>
+                    <p t-field="o.invoice_incoterm_id"/>
+                </div>
+            </xpath>
+            <xpath expr="//div[@t-field='o.partner_shipping_id']" position="after">
+                <div class="mt16" groups="sale.group_delivery_invoice_address">
+                    <t t-if="o.loading_date">
+                        <strong>Data de Carga:</strong>
+                        <span t-field="o.loading_date"/>
+                        <t t-if="o.loading_date and not o.unloading_date">
+                            <br/>
+                        </t>
+                    </t>
+                    <t t-if="o.loading_date and o.unloading_date">/</t>
+                    <t t-if="o.unloading_date">
+                        <strong>Data de Descarga:</strong>
+                        <span t-field="o.unloading_date"/>
+                        <br/>
+                    </t>
+                    <t t-if="o.vehicle_registration">
+                        <strong>Matrícula:</strong>
+                        <span t-field="o.vehicle_registration"/>
+                        <br/>
+                    </t>
+                    <br/>
+                </div>
+            </xpath>
+            <xpath expr="//div[@t-if='o.partner_id.vat']" position="replace">
+            </xpath>
+            <xpath expr="//t/div/div/div[@id='total']/div/table" position="replace">
+            </xpath>
+            <xpath expr="//table[@name='invoice_line_table']/thead/tr" position="replace">
+                <tr>
+                    <th name="th_description" class="text-left"><span>Descrição</span></th>
+                    <th name="th_quantity" class="text-right"><span>Quantidade</span></th>
+                    <th name="th_priceunit" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"><span>Preço Unitário</span></th>
+                    <th name="th_price_unit" t-if="display_discount" t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+                        <span>Desc.%</span>
+                    </th>
+                    <th name="th_taxes" t-attf-class="text-left {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"><span>Taxa %</span></th>
+                    <th name="th_subtotal" class="text-right">
+                        <span >Total</span>
+                    </th>
+                </tr>
+            </xpath>
+            <xpath expr="//t/div/div/div[@id='total']" position="after">
+                <div class="row">
+                    <div class="col-8 pull-left">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <strong>Resumo de Impostos</strong>
+                                        <br/>
+                                        Taxa
+                                    </th>
+                                    <th class="text-right">Base de Incidência</th>
+                                    <th class="text-right">Valor de Imposto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="o.amount_by_group" t-as="amount_by_group">
+                                    <td>
+                                        <span t-esc="amount_by_group[0]"/>
+                                        <t t-if="amount_by_group[6] == 'ISE'">
+                                            - <span t-esc="amount_by_group[7]"/>
+                                        </t>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="amount_by_group[4]" />
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="amount_by_group[3]"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-4 pull-right">
+                      <table class="table table-sm">
+                          <tr class="border-black" style="border-bottom:1px solid #dddddd;">
+                              <td>
+                                  <strong>Total Ilíquido</strong>
+                              </td>
+                              <td class="text-right">
+                                  <span t-field="o.amount_untaxed"/>
+                              </td>
+                          </tr>
+                          <tr class="border-black" style="border-bottom:1px solid #dddddd;">
+                                <td>Total de Imposto</td>
+                                <td class="text-right">
+                                    <span t-field="o.amount_tax"/>
+                                </td>
+                            </tr>
+                          <tr class="border-black">
+                              <td>
+                                  <strong>Total de Documento</strong>
+                              </td>
+                              <td class="text-right">
+                                  <span t-field="o.amount_total"/>
+                              </td>
+                          </tr>
+                            <t t-if="print_with_payments">
+                                <t t-if="o.payment_state != 'invoicing_legacy'">
+                                    <t t-set="payments_vals" t-value="o.sudo()._get_reconciled_info_JSON_values()"/>
+                                    <t t-foreach="payments_vals" t-as="payment_vals">
+                                        <tr>
+                                            <td>
+                                                <i class="oe_form_field text-right oe_payment_label">Pago em <t t-esc="payment_vals['date']" t-options='{"widget": "date"}'/></i>
+                                            </td>
+                                            <td class="text-right">
+                                                <span t-esc="payment_vals['amount']" t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                    <t t-if="len(payments_vals) > 0">
+                                        <tr class="border-black">
+                                            <td><strong>Montante Devido</strong></td>
+                                            <td class="text-right">
+                                                <span t-field="o.amount_residual"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </t>
+                            </t>
+                  </table>
+                </div>
+              </div>
+            </xpath>
+            <xpath expr="//t/div/div[@id='qrcode']" position="after">
+                <div class="row mt16">
+                    <div class="col-12">
+                        <div style="text-align: justify;">
+                            <p t-if="o.narration">
+                                <b>Notas:</b>
+                                <span t-field="o.narration"/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt16">
+                    <div class="col-md-8" style="text-align: justify;">
+                        <p t-if="o.journal_id.saft_inv_type=='NC'">
+                            Ao abrigo do nº5 do artigo 78 do CIVA, agradecemos a devolução do duplicado desta Nota
+                            de Crédito, devidamente assinada e carimbada.
+                        </p>
+                        <p t-if="o.state=='cancel' or o.move_type in ('in_refund', 'out_refund')">
+                            <b>Motivo de Anulação: </b>
+                            <span t-field="o.reason_cancel"/>
+                        </p>
+                        <p t-if="o.move_type in ('in_refund', 'out_refund')">
+                            <b>Assinatura do Cliente: </b>
+                            ____________________________________
+                        </p>
+                        <p t-if="o.journal_id.manual==True">
+                            Cópia do Documento Original - <span t-field="o.invoice_origin"/>
+                        </p>
+                        <p t-if="o.hash and o.state!='draft'">
+                            <div style="text-align: justify;">
+                                <p t-if="o.hash">
+                                    <p>
+                                        <span t-esc="o.hash[0:1]"/><span t-esc="o.hash[10:11]"/><span t-esc="o.hash[20:21]"/><span t-esc="o.hash[30:31]"/>
+                                        - Processado por programa validado nº 380/AGT/2022.
+                                    </p>
+                                </p>
+                            </div>
+                        </p>
+                        <t t-if="o.move_type == 'out_invoice'">
+                            <p>
+                                Os bens / serviços foram colocados à disposição do adquirente na data e local do documento.
+                            </p>
+                        </t>
+
+                        <p t-if="o.state=='draft'">
+                            Este Documento não serve como Factura.
+                            <p>Nota Informativa
+                                <span t-field="o.company_id.name"/>
+                            </p>
+                        </p>
+                    </div>
+                </div>
+            </xpath>
+            <xpath expr="//t/div[@class='page']/table[@name='invoice_line_table']/tbody/t/tr" position="replace">
+                <tr t-att-class="'bg-200 font-weight-bold' if line.display_type == 'line_section' else 'font-italic' if line.display_type == 'line_note' else ''">
+                    <t t-if="not line.display_type" name="account_invoice_line_accountable">
+                        <td name="account_invoice_line_name">
+                            <t t-if="get_description(line)">
+                                <t t-foreach="get_description(line)" t-as="description">
+                                    <span t-esc="description['description']"/>
+                                </t>
+                            </t>
+                            <t t-if="not get_description(line)">
+                                [<span t-field="line.product_id.default_code"/>] <span t-field="line.product_id.name"/>
+                            </t>
+                        </td>
+                        <td class="text-right">
+                            <span t-field="line.quantity"/>
+                            <span t-field="line.product_uom_id" groups="uom.group_uom"/>
+                        </td>
+                        <td t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_move_type == 'html' else '' }}">
+                            <span t-field="line.price_unit"
+                                  t-options='{"widget": "monetary", "display_currency": o.currency_id}'/>
+                        </td>
+                        <td t-if="display_discount"
+                            t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_move_type == 'html' else '' }}">
+                            <span t-field="line.discount"/>
+                        </td>
+                        <td t-attf-class="text-left {{ 'd-none d-md-table-cell' if report_move_type == 'html' else '' }}">
+                            <span t-esc="', '.join(map(lambda x: (x.name), line.tax_ids))"/>
+                        </td>
+                        <td class="text-right" >
+                            <span t-field="line.price_subtotal"
+                                  groups="account.group_show_line_subtotals_tax_excluded"/>
+                            <span t-field="line.price_total"
+                                  groups="account.group_show_line_subtotals_tax_included"/>
+                        </td>
+                    </t>
+                    <t t-if="line.display_type == 'line_section'">
+                        <td t-att-colspan="colspan">
+                            <span t-field="line.name"/>
+                        </td>
+                        <t t-set="current_section" t-value="line"/>
+                        <t t-set="current_subtotal" t-value="0"/>
+                    </t>
+                    <t t-if="line.display_type == 'line_note'">
+                        <td t-att-colspan="colspan">
+                            <span t-field="line.name"/>
+                        </td>
+                    </t>
+                </tr>
+            </xpath>
+        </template>
+
+        <template id="account.report_invoice">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-set="lang"
+                       t-value="o.user_id.lang if o.move_type in ('in_invoice', 'in_refund') else o.partner_id.lang"/>
+                    <t t-set="n_copies" t-value="int(o.company_id.n_copies_invoice)"/>
+                    <t t-foreach="range(n_copies)" t-as="n_pages">
+                        <t t-set="page_n" t-value="n_pages+1"/>
+                        <t t-set="previous_page_value" t-value="0.0"/>
+                        <t t-if="page_n==1">
+                            <t t-call="account.report_invoice_document" t-lang="'pt_PT'"/>
+                        </t>
+                        <t t-else="">
+                            <t t-call="account.report_invoice_document" t-lang="lang"/>
+                        </t>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <template id="account.report_invoice_with_payments">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-set="lang" t-value="o.invoice_user_id.sudo().lang if o.move_type in ('in_invoice', 'in_refund') else o.partner_id.lang"/>
+                    <t t-set="print_with_payments" t-value="True"/>
+                    <t t-set="n_copies" t-value="int(o.company_id.n_copies_invoice)"/>
+                    <t t-foreach="range(n_copies)" t-as="n_pages">
+                        <t t-set="page_n" t-value="n_pages+1"/>
+                            <t t-set="previous_page_value" t-value="0.0"/>
+                        <t t-if="page_n==1">
+                            <t t-if="o._get_name_invoice_report() == 'account.report_invoice_document'"
+                        t-call="account.report_invoice_document" t-lang="'pt_PT'"/>
+                        </t>
+                        <t t-else="">
+                            <t t-if="o._get_name_invoice_report() == 'account.report_invoice_document'"
+                        t-call="account.report_invoice_document" t-lang="lang"/>
+                        </t>
+                    </t>
+
+                </t>
+            </t>
+        </template>
+
+</odoo>

@@ -1,0 +1,846 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* opc_layouts_ao
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-13 20:51+0000\n"
+"PO-Revision-Date: 2020-11-13 20:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "(2ª Via)"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields.selection,name:opc_layouts_ao.selection__res_company__n_copies_invoice__10
+#: model:ir.model.fields.selection,name:opc_layouts_ao.selection__res_company__n_copies_picking__10
+msgid "10"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "<b>Dados Bancários:</b>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "<b>Dados para pagamento por multibanco:</b>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "<b>Data Carga:</b>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "<b>Data Descarga:</b>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "<b>Motivo de Anulação:</b>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "<b>Notas:</b>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid ""
+"<br/>\n"
+"                                    <b>Local Carga:</b>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid ""
+"<br/>\n"
+"                                    <b>Local de Carga:</b>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid ""
+"<br/>\n"
+"                                    <b>Local de Descarga:</b>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid ""
+"<br/>\n"
+"                                    Montante:"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid ""
+"<br/>\n"
+"                                    Referência:"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid ""
+"<br/>\n"
+"                                <b>Local Descarga:</b>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid ""
+"<br/>\n"
+"                                <b>Veículo:</b>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid ""
+"<span style=\"float:right;font-size:11px;margin-top:9px\">Decuplicado</span>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_payment_document_opc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "<span style=\"float:right;font-size:11px;margin-top:9px\">Duplicado</span>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid ""
+"<span style=\"float:right;font-size:11px;margin-top:9px\">Nonuplicado</span>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid ""
+"<span style=\"float:right;font-size:11px;margin-top:9px\">Octuplicado</span>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_payment_document_opc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "<span style=\"float:right;font-size:11px;margin-top:9px\">Original</span>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_payment_document_opc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid ""
+"<span style=\"float:right;font-size:11px;margin-"
+"top:9px\">Quadruplicado</span>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_payment_document_opc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid ""
+"<span style=\"float:right;font-size:11px;margin-"
+"top:9px\">Quintuplicado</span>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid ""
+"<span style=\"float:right;font-size:11px;margin-"
+"top:9px\">Septuplicado</span>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid ""
+"<span style=\"float:right;font-size:11px;margin-"
+"top:9px\">Sextuplicado</span>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_payment_document_opc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid ""
+"<span style=\"float:right;font-size:11px;margin-top:9px\">Triplicado</span>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "<span>Rascunho Cancelado</span>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "<span>Rascunho</span>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_payment_document_opc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "<strong>Contribuinte:</strong>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "<strong>Código AT:</strong>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "<strong>Data de Carga:</strong>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "<strong>Data de Descarga:</strong>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "<strong>Date Ordered:</strong>"
+msgstr "<strong>Data da Cotação:</strong>"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "<strong>Incoterm:</strong>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "<strong>Invoice Date:</strong>"
+msgstr "<strong>Data da fatura:</strong>"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "<strong>Matrícula:</strong>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "<strong>Montante Devido</strong>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "<strong>Payment Terms:</strong>"
+msgstr "<strong>Termos de Pagamento:</strong>"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "<strong>Quotation Date:</strong>"
+msgstr "<strong>Data da Cotação:</strong>"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "<strong>Quotation:</strong>"
+msgstr "<strong>Orçamento:</strong>"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "<strong>Refund Date:</strong>"
+msgstr "<strong>Data da Nota de Crédito:</strong>"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "<strong>Salesperson:</strong>"
+msgstr "<strong>Vendedor:</strong>"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "<strong>Subtotal</strong>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "<strong>Termo de Pagamento:</strong>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "<strong>V/Nº. Contribuinte</strong>"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "<strong>Your Reference:</strong>"
+msgstr "<strong>Vossa Referência:</strong>"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "AA"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_payment_document_opc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "ATCUD:"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields,help:opc_layouts_ao.field_db_backup__folder
+msgid "Absolute path for storing the backups"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model:ir.model,name:opc_layouts_ao.model_report_account_report_invoice
+msgid "Account report"
+msgstr "Relatório de Conta"
+
+#. module: opc_layouts_ao
+#: model:ir.model,name:opc_layouts_ao.model_report_account_report_invoice_with_payments
+msgid "Account report with payment lines"
+msgstr "Relatório de Conta com Linhas de Pagamento"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid ""
+"Ao abrigo do nº5 do artigo 78 do CIVA, agradecemos a devolução do duplicado desta Nota\n"
+"                            de Crédito, devidamente assinada e carimbada."
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_res_company__background_image
+msgid "Apps Menu Background Image"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_db_backup__folder
+msgid "Backup Directory"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model:ir.model,name:opc_layouts_ao.model_db_backup
+msgid "Backup configuration record"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Base"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: code:addons/opc_layouts_ao/models/account_move.py:0
+#, python-format
+msgid "Cancelled Credit Note - %s"
+msgstr "Nota de Crédito Cancelada - %s"
+
+#. module: opc_layouts_ao
+#: code:addons/opc_layouts_ao/models/account_move.py:0
+#, python-format
+msgid "Cancelled Invoice - %s"
+msgstr "Fatura Cancelada - %s"
+
+#. module: opc_layouts_ao
+#: code:addons/opc_layouts_ao/models/account_move.py:0
+#, python-format
+msgid "Cancelled Vendor Bill - %s"
+msgstr "Fatura de Fornecedor Cancelada - %s"
+
+#. module: opc_layouts_ao
+#: code:addons/opc_layouts_ao/models/account_move.py:0
+#, python-format
+msgid "Cancelled Vendor Credit Note - %s"
+msgstr "Nota de Crédito de Fornecedor Cancelada - %s"
+
+#. module: opc_layouts_ao
+#: model:ir.model,name:opc_layouts_ao.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_payment_document_opc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Consumidor Final"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: code:addons/opc_layouts_ao/models/account_move.py:0
+#, python-format
+msgid "Credit Note"
+msgstr "Nota de Crédito"
+
+#. module: opc_layouts_ao
+#: code:addons/opc_layouts_ao/models/account_move.py:0
+#, python-format
+msgid "Credit Note - %s"
+msgstr "Nota de Crédito - %s"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Cópia do Documento Original -"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "Cópia do Documento Original-"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "DA"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_bank_statement_line__loading_date
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_move__loading_date
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_payment__loading_date
+msgid "Date of Loading"
+msgstr "Data de Carga"
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_bank_statement_line__unloading_date
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_move__unloading_date
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_payment__unloading_date
+msgid "Date of Unloading"
+msgstr "Data de Descarga"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Decuplicado"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_move__display_name
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_db_backup__display_name
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_report_account_report_invoice__display_name
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_report_account_report_invoice_with_payments__display_name
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_res_company__display_name
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_res_users__display_name
+msgid "Display Name"
+msgstr "Nome"
+
+#. module: opc_layouts_ao
+#: code:addons/opc_layouts_ao/models/account_move.py:0
+#, python-format
+msgid "Draft Invoice"
+msgstr "Fatura Rascunho"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Duplicado"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid ""
+"Em caso de litígio o consumidor pode recorrer a uma entidade de resolução alternativa\n"
+"                            de litígios de consumo: CNIACC - CENTRO NACIONAL DE INFORMAÇÃO E ARBITRAGEM DE\n"
+"                            CONFLITOS. Endereço: Faculdade de Direito Universidade Nova de Lisboa campos\n"
+"                            campolide 1099-032 Lisboa Telf: 213 847 484/919 225 540 (das 15:00h às 17:00h). Para\n"
+"                            mais informações consultar www.consumidor.pt"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Entidade:"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "Este Documento não serve como Fatura."
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Este documento não serve como fatura ou documento de transporte."
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "FR"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "FS"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "FT"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Fatura"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Fatura Anulada"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Fatura de Compra"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Fatura de Compra Cancelada"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Fatura de Consignação #"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Fatura de Consignação Cancelada #"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Fatura\\Recibo"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "Guia de Consignação"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "Guia de Devolução"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "Guia de Remessa"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "Guia de Trânsito"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_move__id
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_db_backup__id
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_report_account_report_invoice__id
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_report_account_report_invoice_with_payments__id
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_res_company__id
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_res_users__id
+msgid "ID"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Imposto"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Impostos"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields.selection,name:opc_layouts_ao.selection__res_company__default_sidebar_preference__invisible
+#: model:ir.model.fields.selection,name:opc_layouts_ao.selection__res_users__sidebar_type__invisible
+msgid "Invisible"
+msgstr "Invisível"
+
+#. module: opc_layouts_ao
+#: code:addons/opc_layouts_ao/models/account_move.py:0
+#, python-format
+msgid "Invoice - %s"
+msgstr "Fatura - %s"
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_bank_statement_line__isprinted
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_move__isprinted
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_payment__isprinted
+msgid "Is Printed"
+msgstr "Foi Impresso"
+
+#. module: opc_layouts_ao
+#: model:ir.model,name:opc_layouts_ao.model_account_move
+msgid "Journal Entry"
+msgstr "Lançamento de Diário"
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields.selection,name:opc_layouts_ao.selection__res_company__default_sidebar_preference__large
+#: model:ir.model.fields.selection,name:opc_layouts_ao.selection__res_users__sidebar_type__large
+msgid "Large"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_move____last_update
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_db_backup____last_update
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_report_account_report_invoice____last_update
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_report_account_report_invoice_with_payments____last_update
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_res_company____last_update
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_res_users____last_update
+msgid "Last Modified on"
+msgstr "Última Modificação em"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.account_invoice_form_view_transportation_data
+msgid "Load Data"
+msgstr "Dados de Carga"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Motivo do cancelamento :"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "N/ Armazém"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "NC"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "ND"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Nonuplicado"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Nota Informativa"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Nota de Crédito"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Nota de Crédito Anulada"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Nota de Crédito de Fornecedor"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Nota de Crédito de Fornecedor Cancelada"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Nota de Débito"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Nota de Encomenda #"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Nota de Encomenda Cancelada #"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_res_company__n_copies_picking
+msgid "Number of Copies for Picking"
+msgstr "Nº Cópias Guias"
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_res_company__n_copies_invoice
+msgid "Number of Copies for invoice and payment"
+msgstr "Nº Cópias Fatura e Pagamento"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Octuplicado"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_payment_document_opc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Opencloud -"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Original"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Orçamento #"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Orçamento Cancelado #"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Pago em"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Pro-Forma #"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Pro-Forma Cancelada #"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Quadruplicado"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Quintuplicado"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "Rascunho"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_payment_document_opc
+msgid "Recibo: RG"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Septuplicado"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Sextuplicado"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_res_company__default_sidebar_preference
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_res_users__sidebar_type
+msgid "Sidebar Type"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields.selection,name:opc_layouts_ao.selection__res_company__default_sidebar_preference__small
+#: model:ir.model.fields.selection,name:opc_layouts_ao.selection__res_users__sidebar_type__small
+msgid "Small"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.account_invoice_form_view_transportation_data
+msgid "Transportation Data"
+msgstr "Dados de Transporte"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "Triplicado"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.account_invoice_form_view_transportation_data
+msgid "Unload Data"
+msgstr "Dados de Descarga"
+
+#. module: opc_layouts_ao
+#: model:ir.model,name:opc_layouts_ao.model_res_users
+msgid "Users"
+msgstr "Utilizadores"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "V/ Armazém"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+msgid "VD"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_saleorder_document_itc
+msgid "Valor"
+msgstr ""
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_bank_statement_line__vehicle_registration
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_move__vehicle_registration
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_payment__vehicle_registration
+msgid "Vehicle Registration"
+msgstr "Registro do Veículo"
+
+#. module: opc_layouts_ao
+#: code:addons/opc_layouts_ao/models/account_move.py:0
+#, python-format
+msgid "Vendor Bill"
+msgstr "Fatura de Fornecedor"
+
+#. module: opc_layouts_ao
+#: code:addons/opc_layouts_ao/models/account_move.py:0
+#, python-format
+msgid "Vendor Bill - %s"
+msgstr "Fatura de Fornecedor - %s"
+
+#. module: opc_layouts_ao
+#: code:addons/opc_layouts_ao/models/account_move.py:0
+#, python-format
+msgid "Vendor Credit Note"
+msgstr "Nota de Crédito de Fornecedor"
+
+#. module: opc_layouts_ao
+#: code:addons/opc_layouts_ao/models/account_move.py:0
+#, python-format
+msgid "Vendor Credit Note - %s"
+msgstr "Nota de Crédito de Fornecedor - %s"
+
+#. module: opc_layouts_ao
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_bank_statement_line__view_transportation_data
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_move__view_transportation_data
+#: model:ir.model.fields,field_description:opc_layouts_ao.field_account_payment__view_transportation_data
+msgid "View Transportation Data"
+msgstr "Ver Informação de Transporte"
+
+#. module: opc_layouts_ao
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_invoice_document_itc
+#: model_terms:ir.ui.view,arch_db:opc_layouts_ao.report_picking_opc
+msgid "nº"
+msgstr ""

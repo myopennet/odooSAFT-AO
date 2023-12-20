@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_company_form_inherit_itc">
+            <field name="name">res.company.form</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@class='o_address_format']" position="after">
+                    <field name="n_copies_invoice"/>
+                    <field name="n_copies_picking"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

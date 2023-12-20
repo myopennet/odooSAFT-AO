@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+<!--        <template id="external_layout_background_company_vat" inherit_id="web.external_layout_background">-->
+<!--            <xpath expr="//div[@class='float-left company_address']" position="after">-->
+<!--                Contribuinte: <span t-field="company.partner_id.vat" />-->
+<!--            </xpath>-->
+<!--        </template>-->
+
+<!--        <template id="external_layout_boxed_company_vat" inherit_id="web.external_layout_boxed">-->
+<!--            <xpath expr="//div[@name='company_address']" position="after">-->
+<!--                Contribuinte: <span t-field="company.partner_id.vat" />-->
+<!--            </xpath>-->
+<!--        </template>-->
+
+<!--        <template id="external_layout_clean_company_vat" inherit_id="web.external_layout_clean">-->
+<!--            <xpath expr="//div[@name='company_address']" position="after">-->
+<!--                Contribuinte: <span t-field="company.partner_id.vat" />-->
+<!--            </xpath>-->
+<!--        </template>-->
+<!--        <template id="external_layout_standard_brand" inherit_id="web.external_layout_standard">-->
+<!--            <xpath expr="//div[@name='company_address']" position="after">-->
+<!--                Contribuinte: <span t-field="company.partner_id.vat" />-->
+<!--            </xpath>-->
+<!--        </template>-->
+
+    </data>
+</odoo>

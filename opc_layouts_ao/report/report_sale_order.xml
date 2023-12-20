@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <template id="report_saleorder_document_itc" inherit_id="sale.report_saleorder_document">
+            <xpath expr="//t/div[@class='page']/h2" position="replace">
+                <h2>
+                    <t t-if="not doc.certificated">
+                        <t t-if="doc.state == 'cancel'">
+                            <span>Rascunho Cancelado</span>
+                        </t>
+                        <t t-if="not doc.state == 'cancel'">
+                            <span>Rascunho</span>
+                        </t>
+                    </t>
+                    <t t-if="doc.certificated">
+                        <t t-if="not doc.state == 'cancel'">
+                            <span t-if="doc.type_doc == 'OR' and 'OR' in doc.name">Orçamento nº </span>
+                            <span t-if="doc.type_doc == 'NE' and 'OR' not in doc.name">Nota de Encomenda nº </span>
+                            <span t-if="doc.type_doc == 'PP'">Pro-Forma nº </span>
+                            <span t-if="doc.type_doc == 'FC'">Fatura de Consignação nº </span>
+                        </t>
+                        <t t-if="doc.state == 'cancel'">
+                            <span t-if="doc.type_doc == 'OR' and 'OR' in doc.name">Orçamento Cancelado nº </span>
+                            <span t-if="doc.type_doc == 'NE' and 'OR' not in doc.name">Nota de Encomenda Cancelada nº </span>
+                            <span t-if="doc.type_doc == 'PP'">Pro-Forma Cancelada nº </span>
+                            <span t-if="doc.type_doc == 'FC'">Fatura de Consignação Cancelada nº </span>
+                        </t>
+                    </t>
+                    <span t-field="doc.name"/>
+                </h2>
+            </xpath>
+
+            <xpath expr="//table/thead/tr/th[last()]" position="replace">
+                <th name="th_subtotal" class="text-right">
+                    <span>Total</span>
+                </th>
+            </xpath>
+
+            <xpath expr="//t/div[@class='page']/div[@class='clearfix']" position="after">
+                <div class="row mt16 mb16">
+                    <div class="col-12">
+                        <div style="text-align: justify;">
+                            <p t-if="doc.note">
+                                <b>Notas:</b>
+                                <span t-field="doc.note"/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt16 mb16">
+                    <div style="text-align: justify;" class="col-8">
+                        <div>Este documento não serve como fatura.</div>
+                        <p t-if="doc.hash">
+                            <p>
+                                <span t-esc="doc.hash[0:1]"/><span t-esc="doc.hash[10:11]"/><span t-esc="doc.hash[20:21]"/><span t-esc="doc.hash[30:31]"/>
+                                - Processado por programa validado nº 380/AGT/2022.
+                            </p>
+                        </p>
+                        <p t-if="doc.state == 'cancel'">
+                            <p>Motivo do cancelamento: <span t-field="doc.descricao_cancel"/>
+                            </p>
+                        </p>
+                    </div>
+                </div>
+            </xpath>
+            <xpath expr="//t/div[@class='page']/p[@t-field='doc.note']" position="replace">
+            </xpath>
+            <xpath expr="//t/div[@class='page']/div[@id='informations']" position="replace">
+                <div class="row col mt32 mb32">
+                    <div t-if="doc.partner_id" class="mw-100 mb-2">
+                        <strong>Contribuinte:</strong>
+                        <p t-if="doc.partner_id.commercial_partner_id.vat!='999999999'">
+                          <span t-field="doc.partner_id.commercial_partner_id.vat"/>
+                        </p>
+                        <p t-if="doc.partner_id.commercial_partner_id.vat=='999999999'">Consumidor Final</p>
+                    </div>
+                    <div t-if="doc.client_order_ref" class="col-auto mw-100 mb-2">
+                        <strong>Your Reference:</strong>
+                        <p t-field="doc.client_order_ref"/>
+                    </div>
+                    <div t-if="doc.date_order and doc.state not in ['draft','sent']" class="col-auto mw-100 mb-2">
+                        <strong>Date Ordered:</strong>
+                        <p t-field="doc.date_order"/>
+                    </div>
+                    <div t-if="doc.date_order and doc.state in ['draft','sent']" class="col-auto mw-100 mb-2">
+                        <strong>Quotation Date:</strong>
+                        <p t-field="doc.date_order"/>
+                    </div>
+                    <div t-if="doc.user_id.name" class="col-auto mw-100 mb-2">
+                        <strong>Salesperson:</strong>
+                        <p t-field="doc.user_id"/>
+                    </div>
+                    <div t-if="doc.type_doc == 'NE'" class="col-auto mw-100 mb-2">
+                        <strong>Quotation:</strong>
+                        <p t-field="doc.old_name_quotation"/>
+                    </div>
+                    <div name="payment_term" t-if="doc.payment_term_id" class="col-auto mw-100 mb-2">
+                        <strong>Payment Terms:</strong>
+                        <p t-field="doc.payment_term_id"/>
+                    </div>
+                    <div name="incoterm" t-if="doc.incoterm" class="col-auto mw-100 mb-2">
+                        <strong>Incoterm:</strong>
+                        <p t-field="doc.incoterm"/>
+                    </div>
+                </div>
+            </xpath>
+            <xpath expr="//t/div/div/div[@id='total']" position="replace">
+                <div id="total" class="row">
+                    <div class="col-8 pull-left">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <strong>Resumo de Impostos</strong>
+                                        <br/>
+                                        Taxa
+                                    </th>
+                                    <th class="text-right">Base de Incidência</th>
+                                    <th class="text-right">Valor de Imposto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="doc.amount_by_group" t-as="amount_by_group">
+                                    <td>
+                                        <span t-esc="amount_by_group[0]"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="amount_by_group[4]" />
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="amount_by_group[3]"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-4 pull-right">
+                        <table class="table table-sm" style="page-break-inside: avoid;">
+                            <tr class="border-black o_subtotal" style="">
+                                <td><strong>Total Ilíquido</strong></td>
+                                <td class="text-right">
+                                    <span t-field="doc.amount_untaxed"/>
+                                </td>
+                            </tr>
+                            <tr class="border-black o_subtotal" style="">
+                                <td>Total de Imposto</td>
+                                <td class="text-right">
+                                    <span t-field="doc.amount_tax"/>
+                                </td>
+                            </tr>
+                            <tr class="border-black o_total">
+                                <td><strong>Total do Documento</strong></td>
+                                <td class="text-right">
+                                    <span class="text-nowrap" t-field="doc.amount_total"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
+        <template id="sale.report_saleorder">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-set="lang" t-value="doc.partner_id.lang"/>
+                    <t t-call="sale.report_saleorder_document" t-lang="lang"/>
+                </t>
+            </t>
+        </template>
+</odoo>

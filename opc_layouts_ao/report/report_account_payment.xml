@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <template id="account.report_payment_receipt">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-set="lang" t-value="o.partner_id.lang"/>
+                    <t t-set="n_copies" t-value="int(o.company_id.n_copies_invoice)"/>
+                    <t t-foreach="range(n_copies)" t-as="n_pages">
+                        <t t-set="page_n" t-value="n_pages+1"/>
+                        <t t-call="account.report_payment_receipt_document" t-lang="lang"/>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <template id="report_payment_document_opc" inherit_id="account.report_payment_receipt_document">
+            <xpath expr="//t/div[@class='page']/h3" position="replace">
+                <div class="row mt16">
+                    <div t-if="o.partner_id.id" class="col-12">
+                        <h3 style="margin-bottom:0px;font-size:22px">
+                            <t t-if="page_n==1">
+                                <span style="float:right;font-size:11px;margin-top:9px">Original</span>
+                            </t>
+                            <t t-if="page_n==2">
+                                <span style="float:right;font-size:11px;margin-top:9px">Duplicado</span>
+                            </t>
+                            <t t-if="page_n==3">
+                                <span style="float:right;font-size:11px;margin-top:9px">Triplicado</span>
+                            </t>
+                            <t t-if="page_n==4">
+                                <span style="float:right;font-size:11px;margin-top:9px">Quadruplicado</span>
+                            </t>
+                            <t t-if="page_n==5">
+                                <span style="float:right;font-size:11px;margin-top:9px">Quintuplicado</span>
+                            </t>
+
+                        </h3>
+                        <h3>
+                            <strong>
+                                Recibo:
+                                <t t-if="o.journal_id.saft_inv_type in ('RG', 'RC', 'AR')">
+                                    <span t-if="o.journal_id.saft_inv_type=='RG'">RG</span>
+                                    <span t-if="o.journal_id.saft_inv_type=='RC'">RC</span>
+                                    <span t-if="o.journal_id.saft_inv_type=='AR'">AR</span>
+                                </t>
+                                <t t-else="">
+                                    RG
+                                </t>
+                                <span t-field="o.name"/>
+                            </strong>
+                        </h3>
+                    </div>
+                    <p><br/></p>
+                </div>
+            </xpath>
+
+             <xpath expr="//t/div[@class='page']/div/div/div" position="after">
+                 <div class="col-6" t-if="o.date">
+                    Contribuinte:
+                     <span t-if="o.partner_id.commercial_partner_id.vat!='999999999'"
+                           t-field="o.partner_id.commercial_partner_id.vat"/>
+                     <span t-if="o.partner_id.commercial_partner_id.vat=='999999999'">Consumidor Final</span>
+                </div>
+            </xpath>
+
+            <xpath expr="//t/div[@class='page']/table" position="before">
+                    <p><br/></p>
+            </xpath>
+
+            <xpath expr="//table/thead/tr/th[last()]" position="replace">
+                <th class="text-right"><span>Total Imposto Liquidado da Fatura</span></th>
+                <th class="text-right"><span>Total da Fatura</span></th>
+            </xpath>
+
+            <xpath expr="//table/tbody/t/t/tr[1]/td[2]" position="replace">
+                <td>
+                    <span t-esc="inv.journal_id.saft_inv_type"/>
+                    <span t-field="inv.name"/>
+                </td>
+            </xpath>
+
+            <xpath expr="//table/tbody/t/t/tr[2]" position="replace">
+            </xpath>
+            <xpath expr="//table/tbody/t/t/tr/td[last()]" position="before">
+                <td class="text-right"><span t-field="inv.amount_tax"/></td>
+            </xpath>
+            <xpath expr="//table/tbody/t/t/tr[2]/td[last()]" position="before">
+                <td/>
+            </xpath>
+
+            <xpath expr="//t/div[@class='page']/table" position="after">
+                <div class="row mt16 mb16">
+                    <div class="col-12">
+                        <div style="text-align: justify;">
+                            <p t-if="o.hash">
+                                <p>
+                                    <!-- recibos n levam hash -->
+                                    Processado por programa validado nº 380/AGT/2022.
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </xpath>
+
+        </template>
+
+
+
+    </data>
+</odoo>
