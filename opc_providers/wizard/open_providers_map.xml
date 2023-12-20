@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="wizard_open_providers_map" model="ir.ui.view">
+        <field name="model">supplier.report.ao</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="from_date" />
+                    <field name="to_date" />
+                    <field name="company_ids" widget="many2many_tags" />
+                </group>
+            </form>
+            <footer>
+                <button name="open_tree" string="Open the Providers Map" type="object" class="oe_highlight" />
+                <button special="cancel" string="Close" class="btn-secondary" />
+            </footer>
+        </field>
+    </record>
+    <record id="action_open_providers_map" model="ir.actions.act_window">
+        <field name="name">Providers Map</field>
+        <field name="res_model">supplier.report.ao</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="wizard_open_providers_map" />
+        <field name="target">new</field>
+    </record>
+
+    <menuitem
+        id="menu_providers_map_wizard"
+        name="Mapa de Fornecedores"
+        parent="account.account_reports_management_menu"
+        sequence="20"
+        action="action_open_providers_map"
+    />
+
+</odoo>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_providers_map_tree" model="ir.ui.view">
+        <field name="name">view.providers.map.tree</field>
+        <field name="model">provider.map</field>
+        <field eval="100" name="priority" />
+        <field name="arch" type="xml">
+            <tree create="false" delete="false">
+                <field name="contador" />
+                <field name="numero_de_identifacao_fiscal" />
+                <field name="empresa" readonly="1" />
+                <field name="tipo_documento" />
+                <field name="data_documento" readonly="1" />
+                <field name="referencia" />
+                <field name="valor_documento" />
+                <field name="valor_tributavel" readonly="1"/>
+                <field name="iva_suportado" readonly="1"/>
+                <field name="percentagem_tax" />
+                <field name="iva_suportado" readonly="1"/>
+                <field name="tipologia" />  
+                <field name="iva_cativo_percentagem" /> 
+                <field name="iva_cativo_valor" />
+                <field name="linha_destino" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_open_providers_map_tree" model="ir.actions.act_window">
+        <field name="name">Providers Map</field>
+        <field name="res_model">provider.map</field>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_providers_map_tree" />
+    </record>
+
+</odoo>
