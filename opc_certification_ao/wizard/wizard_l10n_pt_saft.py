@@ -290,7 +290,7 @@ class WizardSaft(models.Model):
                 root.append(docs)
 
         xml_txt = et.tostring(root, encoding="windows-1252")
-        out = base64.encodestring(xml_txt)
+        out = base64.encodebytes(xml_txt)
 
         self.write({'state': 'get', 'filedata': out, 'name': nome_file})
 
